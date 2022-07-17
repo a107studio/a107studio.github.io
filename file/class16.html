@@ -1,0 +1,49 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--乱码了就改成gbk-->
+        <script src="https://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="common.js"></script>
+        <script src="read.js"></script>
+        <script src="book.js"></script>
+        <title>十六班的必看</title><!---标题-->
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
+    </head>
+    <style type="text/css">
+        v1 {font-size: 20px;color: red; display : inline}
+        v2 {font-size: 20px;color: green; display : inline}
+    </style>
+    <body>
+        <div id='book'>
+            <div class="path"><div class="p"><a href="https://a107studio.github.io/">107Studio</a> &gt;十六班的必看<!--这里填名字--><span class="oninfo"><script>textselect();</script><div id="page_set">
+                <select onchange="javascript:setFont(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="宋体">字体</option><option value="方正启体简体">默认</option><option value="黑体">黑体</option><option value="楷体_GB2312">楷体</option><option value="微软雅黑">雅黑</option><option value="方正启体简体">启体</option><option value="宋体">宋体</option></select>
+                <select onchange="javascript:setColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#000">颜色</option><option value="#000">默认</option><option value="#9370DB">暗紫</option><option value="#2E8B57">藻绿</option><option value="#2F4F4F">深灰</option><option value="#778899">青灰</option><option value="#800000">栗色</option><option value="#6A5ACD">青蓝</option><option value="#BC8F8F">玫褐</option><option value="#F4A460">黄褐</option><option value="#F5F5DC">米色</option><option value="#F5F5F5">雾白</option></select>
+                <select onchange="javascript:setSize(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#E9FAFF">大小</option><option value="19pt">默认</option><option value="10pt">10pt</option><option value="12pt">12pt</option><option value="14pt">14pt</option><option value="16pt">16pt</option><option value="18pt">18pt</option><option value="20pt">20pt</option><option value="22pt">22pt</option><option value="25pt">25pt</option><option value="30pt">30pt</option></select>
+                <select name="scrollspeed" id="scrollspeed" onchange="javascript:setSpeed(this.options[this.selectedIndex].value);"><option value="5">滚屏</option><option value="1">最慢</option><option value="2">慢2</option><option value="3">慢3</option><option value="4">中4</option><option value="5">中5</option><option value="6">中6</option><option value="7">快7</option><option value="8">快8</option><option value="9">快9</option><option value="10">最快</option></select><select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#E9FAFF" style="background-color: #E9FAFF;">用不了</option><option value="#E9FAFF" style="background-color: #E9FAFF;">默认</option><option value="#FFFFFF" style="background-color: #FFFFFF;">白雪</option><option value="#000000" style="background-color: #000000;color:#FFFFFF;">漆黑</option><option value="#FFFFED" style="background-color: #FFFFED;">明黄</option><option value="#EEFAEE" style="background-color: #EEFAEE;">淡绿</option><option value="#CCE8CF" style="background-color: #CCE8CF;">草绿</option><option value="#FCEFFF" style="background-color: #FCEFFF;">红粉</option><option value="#EFEFEF" style="background-color: #EFEFEF;">深灰</option><option value="#F5F5DC" style="background-color: #F5F5DC;">米色</option><option value="#D2B48C" style="background-color: #D2B48C;">茶色</option><option value="#C0C0C0" style="background-color: #E7F4FE;">银色</option></select>
+                <select onchange="javascript:setWidth(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="95%">宽度</option><option value="95%">默认</option><option value="85%">85%</option><option value="76%">75%</option><option value="67%">65%</option><option value="53%">50%</option><option value="41%">40%</option></select>
+                翻页<input type="checkbox" name="autopage" id="autopage" onchange="javascript:setAutopage();" value="">&nbsp;夜间<input type="checkbox" name="night" id="night" onchange="javascript:setNight();" value=""></div>
+                </span>
+                </div></div>
+                <div class='content'>
+                    <h1>十六班的必看</h1><!---标题-->
+                    <div id='content' class='showtxt'>
+                    <!--说明：1.在两个分界线中间打字 2.<br>是空一行的意思 3.按注释弄，没标注释的不要改-->
+                    <!--分界线，以下可写文章-->
+                    2007-11-04 00:15:05<br>
+                    虽然说开学这么长时间了,有交了好多朋友,但还是忘不了十六班,那个经典的班级,我们真的回不去了?那天看自己曾经的日记,看到了这段话:
+                    <br>
+                    每一个人都有一个一直守护着他/她的天使，这个天使如果觉得你的生 活太过悲哀，你的心情太过难过，那么他就会化身成为你身边的某一个人，也许是你的朋友，也许是你的恋人，也许是你的父母，也许是你仅仅见过一面的陌生人，这些人安静地出现在你的生命里，陪你度过一小段快乐的时光，然后他再不动声色的离开。于是你的人生就有了幸福的回忆，即使以后你的道路上布满了风雪，可是你依然可以想起曾经幸福的事情，你就可以依然勇敢。所以那些默默离开我们的人，其实都是天使回归了天国，比如那些离开的朋友，那些曾经给过你帮助的陌生人，那些曾经爱过最后分开的人，曾经你向他问过路的男生，曾经讲过一个很好听的笑话逗你开心的同学，曾经唱过一首好听的歌给你听的歌手，写过一本好书的作家，他们都是善良的天使。也许你有段时间会对于他们的消失感到伤心或者失落，会四处寻找他们去了哪里，到了什么国度，可是到最后，你都会相信，他们在这个世界的某一个角落，安静而满足地生活着。<v1>于是曾经的那些失落和伤心都将不复存在，时间是最伟大的治愈师。</v1>
+                    <br>
+                    大家都熟悉把,真的感觉好多人一下就从我们的生活中消失了,再也看不到了,是十六班的都来留下言,让我知道你们还在,我们还是最好最到的朋友.<br>
+                    (以后大家见了面别不好意思,也别装类没看见,只要是十六班的就得打个招呼,要不大家群殴拉，呵呵~~)<br>
+                    <!--分界线，以上可写文章-->
+                    <div class="page_chapter">
+                        <ul>
+                            <li><a href="###">上一篇</a></li><!--到时候看着填-->
+                            <li><a href="https://a107studio.github.io/">返回目录</a></li><!--回主页，勿动-->
+                            <li><a href="###">下一篇</a></li><!--到时候看着填-->
+                            <li><a  href='supportus.html'>support us</a></li>
+                        </ul>
+                </div>
+    </body>
+</html>
