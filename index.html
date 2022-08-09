@@ -28,16 +28,32 @@
 												}
 																
 												}
-												function getAnswer() {
-																var d=new Date();
-																var ans=d.getFullYear()+d.getMonth()+d.getDate()+1+d.getHours()+d.getMinutes();
-																ans=ans%107;
-																ans.toString();
-																ans="107"+ans+"114";
-                                                                currentanswer=ans;
-                                                                alert(currentanswer);
-																return ans;
+												function getAnswer()
+												{
+												var date = new Date();//当前时间 
+												var year = date.getFullYear() //年 
+												var month = repair(date.getMonth() + 1);//月
+												var day = repair(date.getDate());//日
+												var hour = repair(date.getHours());//时
+												var minute = repair(date.getMinutes());//分  
+												//当前时间 
+												var ans= year + month + day + hour + minute;
+  											ans=ans%107;
+												ans.toString();
+												ans="107"+ans+"114";
+           //currentanswer=ans;
+           //alert(currentanswer);
+												return ans;
 												}
+  function repair(i)
+  {
+  				if (i >= 0 && i <= 9)
+					{
+								return "0" + i;
+					}
+					else { return i; }
+		}
+
 								</script>
                                 <div id="foot">
                                     <a href="https://www.9321.cn/algebra/quotient.php" target="_blank">在线计算器</a>
