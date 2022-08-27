@@ -1,257 +1,62 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-<title>107Studio学术交流角</title>
-<link rel="shortcut icon" href="https://a107studio.github.io/img/logo.ico">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+				<head>
+								<meta charset="utf-8">
+								<link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
+								<title>107Studio--login</title>
+				</head>
+				<body>
+								<h1>这是一个一个一个登录界面啊啊啊啊（恼</h1>
+								<p>出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面，请联系107工作室成员获取最新密码</p>
+								<p>请输入姓名（实名验证）</p>
+								<p><input type="text" value="" id="name"/></p>
+								<p>请输入密码</p>
+								<p><input type="text" value="" id="mytext"/></p>								<button onClick="getText()">登录！</button>
+								<script>
+                                    var currentanswer=0;
+												function getText(){
+												var id=document.getElementById("mytext").value,name=document.getElementById("name").value;
+												if(name==="武文哲") {
+																for(;;){
+																				alert("傻逼你还敢来");
+																}
+												}																																																																												
+												if(name==="secret114" || id===getAnswer()) {
+															alert("请勿外传，万分感谢！");	window.location.href="https://a107studio.github.io/homepage.html";
+												}else {
+															alert("戳了（悲");	window.location.href="https://www.baidu.com";
+												}
+																
+												}
+												function getAnswer()
+												{
+												var date = new Date();//当前时间 
+												var year = date.getFullYear() //年 
+												var month = repair(date.getMonth() + 1);//月
+												var day = repair(date.getDate());//日
+												var hour = repair(date.getHours());//时
+												var minute = repair(date.getMinutes());//分  
+												//当前时间 
+												var ans= year + month + day + hour + minute;
+  											ans=ans%107;
+												ans.toString();
+												ans="107"+ans+"114";
+           //currentanswer=ans;
+           //alert(currentanswer);
+												return ans;
+												}
+  function repair(i)
+  {
+  				if (i >= 0 && i <= 9)
+					{
+								return "0" + i;
+					}
+					else { return i; }
+		}
 
-
-<!-- Main CSS --> 
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Font Awesome -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-
-<body>
-
-<!-- Header -->
-<div class="header-wrap d-none d-md-block">
-	<div class="container">
-		<div class="row">
-			<h1>Academic</h1><h1 style="color:rgb(255, 153, 0)">Corner</h1>
-		</div>
-	</div>
-</div>
-
-
-<!-- Main navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
-	<div class="container">
-		
-		<!-- Company name shown on mobile -->
-		<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#">Academic Corner</a>
-
-		<!-- Mobile menu toggle -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<!-- Main navigation items -->
-		<div class="collapse navbar-collapse" id="mainNavbar">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="https://a107studio.github.io/homepage.html">回到主站</a>
-			</li>
-
-				<li class="nav-item dropdown active">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">交流角</a>
-							<div class="dropdown-menu navbar-dark bg-primary">
-								<a class="dropdown-item"  href="branchsub/math.html">语文专区</a>
-								<a class="dropdown-item" href="branchsub/math.html">数学专区</a>
-								<a class="dropdown-item" href="branchsub/chinese.html">音乐专区</a>
-								<a class="dropdown-item active" href="branchsub/progress.html">进步专区</a>
-							</div>
-				</li>
-
-				<li class="nav-item">
-						<a class="nav-link" href="#">关于</a>
-				</li>
-
-				<li class="nav-item">
-						<a class="nav-link" href="#">联系我们</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-</br>
-<div style="margin:0 auto";>
-	<p style="text-align: center;"><img src="formula/juwangyi.png"></p>
-</br>
-<h1 style="text-align: center; color: #007bff;">Hottest Articles</h1>
-</div>
-</br>
-<!-- Main content area -->
-<main class="container">
-	<div class="row">
-		
-		<!-- Left sidebar -->
-		 <aside class="col-sm-3">
-			<div class="sidebar-box">
-				<h4>Categories</h4>
-				<div class="list-group list-group-root">
-					<a class="list-group-item" href="https://a107studio.github.io/homepage.html">回主站</a>
-					<a class="list-group-item" href="index.html">回到顶部</a>
-					<div class="list-group">
-						<a class="list-group-item active" href="branchsub/math.html">数学专区</a>
-						<a class="list-group-item" href="branchsub/chinese.html">语文专区</a>
-						<a class="list-group-item" href="branchsub/music.html">音乐专区</a>
-						<a class="list-group-item" href="branchsub/progress.html">进步专区</a>	
-					</div>
-					<a class="list-group-item" href="three-column.html">Three column layout example</a>
-					<a class="list-group-item" href="#">Sed aliquam libero ut velit bibendum</a>
-					<a class="list-group-item" href="#">Maecenas condimentum velit vitae</a>
-				</div>
-			</div>
-
-			<div class="sidebar-box sidebar-box-bg">
-				<h4>About us</h4>
-				<p>本学术交流角致力于提供一个可以补充学习的空间。本学习角涵盖了语文、数学、英语、物理学、化学、生物学、音乐、人文、心理学等多学科的内容，可供您增长见闻、提升自我。 <a href="#" class="readmore">Let's Go</a></p>    
-			</div>
-
-			
-
-			<div class="sidebar-box">
-				<h4>友链</h4>
-				<ul>
-					<li><a href="https://science.org/" title="premium templates">Science</a></li>
-					<li><a href="https://nature.com/" title="web hosting">Nature</a></li>
-					<li><a href="https://www.cell.com/" title="Tux Themes">Cell</a></li>
-					<li><a href="http://www.wyzxwk.com/" title="Tux Themes">乌有之乡</a></li>
-					<li><a href="https://b23.tv/Z1o5Tu7" title="Tux Themes">《毛泽东选集》精选</a></li>
-					<li><a href="https://www.zhihu.com/column/c_1286356584176943104" title="Tux Themes">高中数学的奇技淫巧</a></li>
-				</ul>
-			</div>
-		</aside> 
-		
-		<!-- Main content -->
-		<div class="col-sm-6">
-
-			<article>
-				<h2 class="article-title">永远的苏武</h2>
-
-				<p class="article-meta">Posted by 107Chinese</a></p>
-
-				<p>挥一挥羊鞭，锦帽貂裘，他将其扔进云霄深处；弄一支秃笔，矮纸斜行，他镌刻出对大汉最深切的眷顾。一边是高官厚禄，一边是赤胆忠心：站在忘却与铭记之间、站在逸豫与忧劳之间，他选择了忘却富贵，选择了铭记忠心给人性涂上最浓重的一笔。</p>
-
-				
-				<a href="http://www.leleketang.com/zuowen/369453.shtml" class="btn btn-primary">Read more</a>
-				<a href="branchsub/chinese.html" class="btn btn-secondary">跳转至语文专区</a>
-
-			</article>
-			<article>
-
-				<h2 class="article-title">辛普森(Simpson)公式</h2>
-				<p class="article-meta">Posted by 107Math</a></p>
-
-				<p>立体几何公式。设拟柱体的高（两底面α，β间的距离）为H，如果用平行于底面的平面γ去截该图形，所得到的截面面积是平面γ与平面α之间距离h的不超过3次的函数，那么该拟柱体的体积为<img src="https://www.zhihu.com/equation?tex=V%3d%5cfrac%7B1%7D%7B6%7D%5Ccdot%28S_1%2B4S_0%2BS_2%29%5Ccdot%5c+h">。</p>
-				<a href="https://baike.baidu.com/item/%E8%BE%9B%E6%99%AE%E6%A3%AE%E5%85%AC%E5%BC%8F/9255085?fr=aladdin" class="btn btn-primary">Read more</a>
-				<a href="branchsub/math.html" class="btn btn-secondary">跳转至数学专区</a>
-
-			</article>
-			<article>
-
-				<h2 class="article-title">Zood</h2>
-				<p class="article-meta">Posted by 107Music</a></p>
-
-				<p>《Mood(Li Ghost Remix)》是24KGoldn、Iann Dior与Lil Ghost小鬼的说唱作品。《Zood》是<a href="https://space.bilibili.com/2420442" rel="author">找找</a>的翻唱版本。</p>
-				<p>义！乌！哥儿们在这给你说唱！  L！T！C！嗯！理塘丁真！  哥儿们名叫丁真  Smoking round, e-cigarettes new  我的小马名字叫珍珠  假烟发现就跑路  Baby I ain't smoking by your rules  臭要饭的别挡我财路……</p>
-				<a href="https://www.bilibili.com/video/BV1xh411q76p" class="btn btn-primary">跟随学习</a>
-				<a href="https://a107studio.github.io/file/15.html" class="btn btn-warning">查看歌词</a>
-				<a href="branchsub/music.html" class="btn btn-secondary">跳转至音乐专区</a>
-
-			</article>
-			<article>
-
-				<h2 class="article-title">青年团的工作要照顾青年的特点（一九五三年六月三十日）</h2>
-				<p class="article-meta">Posted by 107Progress</a></p>
-
-				<p>十四岁到二十五岁的青年们，要学习，要工作，但青年时期是长身体的时期，如果对青年长身体不重视，那很危险。青年比成年人更需要学习，要学会成年人已经学会了的许多东西。但是，他们的学习和工作的负担都不能过重。尤其是十四岁到十八岁的青年，劳动强度不能同成年人一样。青年人就是要多玩一点，要多娱乐一点，要跳跳蹦蹦，不然他们就不高兴。以后还要恋爱、结婚。这些都和成年人不同。我给青年们讲几句话:一、祝贺他们身体好；二、祝贺他们学习好；三、祝贺他们工作好。我提议，学生的睡眠时间再增加一小时。现在是八小时，实际上只有六七小时，普遍感到睡不够。因为知识青年容易神经衰弱，他们往往睡不着，醒不来。一定要规定九小时睡眠时间。要下一道命令，不要讨论，强迫执行。青年们要睡好，教师也要睡足。</a></p>
-				<a href="https://www.cctv.com/special/756/1/50012.html" class="btn btn-primary">Read more</a>
-				<a href="branchsub/progress.html" class="btn btn-secondary">跳转至进步专区</a>
-			</article>
-
-
-			<!-- Example pagination Bootstrap component -->
-			<nav>
-				<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-								<span class="sr-only">Previous</span>
-							</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#">1</a></li>
-						<li class="page-item active"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-								<span class="sr-only">Next</span>
-							</a>
-						</li>
-				</ul>
-			</nav>
-		</div>
-	</div> 
-</main>
-
-
-<!-- Footer -->
-<footer class="footer">
-	<div class="footer-lists">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm">
-					<ul>
-						<li><h4>Proin accumsan</h4></li>
-						<li><a href="#">Rutrum nulla a ultrices</a></li>
-						<li><a href="#">Blandit elementum</a></li>
-						<li><a href="#">Proin placerat accumsan</a></li>
-						<li><a href="#">Morbi hendrerit libero </a></li>
-						<li><a href="#">Curabitur sit amet tellus</a></li>
-					</ul>
-				</div>
-				<div class="col-sm">
-					<ul>
-						<li><h4>Condimentum</h4></li>
-						<li><a href="#">Curabitur sit amet tellus</a></li>
-						<li><a href="#">Morbi hendrerit libero </a></li>
-						<li><a href="#">Proin placerat accumsan</a></li>
-						<li><a href="#">Rutrum nulla a ultrices</a></li>
-						<li><a href="#">Cras dictum</a></li>
-					</ul>
-				</div>   
-				<div class="col-sm">
-					<ul>
-						<li><h4>Suspendisse</h4></li>
-						<li><a href="#">Morbi hendrerit libero </a></li>
-						<li><a href="#">Proin placerat accumsan</a></li>
-						<li><a href="#">Rutrum nulla a ultrices</a></li>
-						<li><a href="#">Curabitur sit amet tellus</a></li>
-						<li><a href="#">Donec in ligula nisl.</a></li>
-					</ul>
-				</div>
-				<div class="col-sm">
-					<h4>Suspendisse</h4>
-					<p>Integer mattis blandit turpis, quis rutrum est. Maecenas quis arcu vel felis lobortis iaculis fringilla at ligula. Nunc dignissim porttitor dolor eget porta.</p>
-
-					<p class="social-icons">
-						<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-						<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-						<a href="#"><i class="fa fa-youtube fa-2x"></i></a>
-						<a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-	<div class="footer-bottom">
-			<p class="text-center">Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
-</p>
-			<p class="text-center"><a href="#">Back to top</a></p>
-	</div>
-	
-</footer>
-<!--Bootcamp JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.2.1.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-</body>
+								</script>
+                                <div id="foot">
+                                    <a href="https://www.9321.cn/algebra/quotient.php" target="_blank">在线计算器</a>
+                                </div>
+				</body>
 </html>
