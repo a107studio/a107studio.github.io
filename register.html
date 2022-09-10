@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+				<head>
+								<meta charset="utf-8">
+								<link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
+								<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>								<title>107Studio--register</title>
+				</head>
+				<body>
+								<h1>注册你的107账号！</h1>
+								<p>这是一个会员制注册界面（喜</p>
+								<p>请输入用户名</p>
+								<p><input type="text" value="" id="userId"/></p>
+								<p>请输入密码</p>
+								<p><input type="text" value="" id="password"/></p>
+								<p>请再次输入密码</p>
+								<p><input type="text" value="" id="repassword"/></p>
+								<p>请输入邀请码</p>
+								<p><input type="text" value="" id="invitation"/></p>
+																<button onClick="toregister()">注册！</button>
+										<p>温馨提示:请不要输常用密码，因为我能看得见你们的密码且这个网站并不安全（悲</p>
+
+							<script>
+												function toregister() {
+																var password=document.getElementById("password").value,repassword=document.getElementById("repassword").value,name=document.getElementById("userId").value;
+																if(password===repassword&& password!=""&& name!="") {
+																				register()
+																}else {
+																alert("不符合注册规范捏")
+																				alert("提示：姓名密码不为空，两次密码一致")
+																																				}
+												}
+												function register(){
+        $.ajax({
+        url:"http://101.43.151.15:7777/register",
+            type:"post",
+            dataType:"json",
+ 
+            //data为要传递给后端的数据，使用JSON.stringify()转换为json格式
+            data:JSON.stringify({
+                    userId:   $("#userId").val(),
+                    password: $("#password").val(),
+                    invitation:$("#invitation").val()
+                }),
+            success:function (data){
+            if(data.status==="accept") {
+            				alert("注册成功!")  
+            }
+             if(data.status==="unaccept") {
+             				alert("邀请码错了捏")
+             }
+             if(data.status==="haveuser") {
+             				alert("用户名被占用")
+             }
+            },
+            error:function () {
+            				alert("未知错误（换个浏览器试试捏）")
+            }
+        })
+    }
+							</script>
+												
+						<div id="foot">
+										<p>注册完了？</p>
+                                    <a href="/" target="_blank">戳这里登录！</a>
+                                </div>						
+				</body>
+</html>
