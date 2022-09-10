@@ -3,60 +3,49 @@
 				<head>
 								<meta charset="utf-8">
 								<link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
-								<title>107Studio--login</title>
+								<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>								<title>107Studio--login</title>
 				</head>
 				<body>
 								<h1>这是一个一个一个登录界面啊啊啊啊（恼</h1>
-								<p>出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面，请联系107工作室成员获取最新密码</p>
-								<p>请输入姓名（实名验证）</p>
-								<p><input type="text" value="" id="name"/></p>
+								<p>出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面</p>
+								<p>请输入用户名</p>
+								<p><input type="text" value="" id="userId"/></p>
 								<p>请输入密码</p>
-								<p><input type="text" value="" id="mytext"/></p>								<button onClick="getText()">登录！</button>
-								<script>
-                                    var currentanswer=0;
-												function getText(){
-												var id=document.getElementById("mytext").value,name=document.getElementById("name").value;
-												if(name==="武文哲") {
-																for(;;){
-																				alert("傻逼你还敢来");
-																}
-												}																																																																												
-												if(name==="secret114" || id===getAnswer()) {
-															alert("请勿外传，万分感谢！");	window.location.href="https://a107studio.github.io/homepage.html";
-												}else {
-															alert("戳了（悲");	window.location.href="https://www.baidu.com";
-												}
-																
-												}
-												function getAnswer()
-												{
-												var date = new Date();//当前时间 
-												var year = date.getFullYear() //年 
-												var month = repair(date.getMonth() + 1);//月
-												var day = repair(date.getDate());//日
-												var hour = repair(date.getHours());//时
-												var minute = repair(date.getMinutes());//分  
-												//当前时间 
-												var ans= year + month + day + hour + minute;
-  											ans=ans%107;
-												ans.toString();
-												ans="107"+ans+"114";
-           //currentanswer=ans;
-           //alert(currentanswer);
-												return ans;
-												}
-  function repair(i)
-  {
-  				if (i >= 0 && i <= 9)
-					{
-								return "0" + i;
-					}
-					else { return i; }
-		}
-
-								</script>
-                                <div id="foot">
-                                    <a href="https://www.9321.cn/algebra/quotient.php" target="_blank">在线计算器</a>
-                                </div>
+								<p><input type="text" value="" id="password"/></p>								<button onClick="login()">登录！</button>
+							<script>
+												function login(){
+        $.ajax({
+        url:"http://101.43.151.15:7777/login",
+            type:"post",
+            dataType:"json",
+ 
+            //data为要传递给后端的数据，使用JSON.stringify()转换为json格式
+            data:JSON.stringify({
+                    userId:   $("#userId").val(),
+                    password: $("#password").val()
+                }),
+            success:function (data){
+            if(data.status==="accept") {
+            				alert("登录成功!")  
+            				   window.location.href="https://a107studio.github.io/homepage.html"
+            }
+             if(data.status==="unaccept") {
+             				alert("密码错了捏")
+             }   
+             if(data.status==="nouser") {
+             				alert("先注册一个账号捏")
+             }
+            },
+            error:function () {
+            				alert("未知错误（换个浏览器试试捏）")
+            }
+        })
+    }
+							</script>
+												
+						<div id="foot">
+										<p>没有账号？</p>
+                                    <a href="/justatest/register.html" target="_blank">戳这里注册！</a>
+                                </div>						
 				</body>
 </html>
