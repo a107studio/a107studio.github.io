@@ -2,6 +2,7 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8" />
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 	<title>107Studio</title>
 	<meta name="Keywords" content="107Studio"/>
@@ -129,11 +130,12 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="check();">
 	<div id="top">
 		<div id="nav" class="animated flipInX">
 			<ul>
-				<a href="homepage.html"><li>首页</li></a>
+				<a href="" id="userlink"><li id="username"></li></a>
+				<a href="javascript:logout()"> 登出</a>
 				<a href="academic-corner/index.html" target="_blank"><li>学术交流角</li></a>
 				<a href="https://github.com/a107studio" target="_blank"><li>107Studio</li></a>
 			</ul>
@@ -340,5 +342,62 @@
 	<div id="foot">
 		<p>All Rights Reserved.</p>
 	</div>
+	<script>
+				function check() {
+								var names=location.search.substr(1);
+								var name=names.split("=");
+								//alert(name[1]);
+									document.getElementById("username").innerHTML="欢迎，"+name[1]+"!";
+								document.getElementById("userlink").href='/homepage?user='+name[1]
+								$.ajax({
+												url:"http://101.43.151.15:7777/check",
+            type:"post",
+            dataType:"json",
+            data:JSON.stringify({
+                    userId:name[1]}),
+                    xhrFields: {
+        withCredentials: true
+    },
+    crossDomain: true,
+            success:    function (data) {
+            				if(data.status==='accept') {
+            								return
+            				}
+            				if(data.status==='unaccept') {
+            								alert('请登录')
+            							window.location.href='/'           				}
+            },
+             error:     function () {
+             				window.location.href='/'
+             }    
+								})
+								
+				}
+					function logout() {
+									var names=location.search.substr(1);
+								var name=names.split("=");
+								//alert(name[1]);
+								$.ajax({
+												url:"http://101.43.151.15:7777/logout",
+            type:"post",
+            dataType:"json",
+            data:JSON.stringify({
+                    userId:name[1]}),
+                    xhrFields: {
+        withCredentials: true
+    },
+    crossDomain: true,
+    success:    function (data) {
+    alert('感谢您的使用！')
+    window.location.href='/'
+            				         				
+            },
+             error:     function () {
+             
+             				window.location.href='/'
+             }
+								})
+					}	
+	</script>
 </body>
 </html>
