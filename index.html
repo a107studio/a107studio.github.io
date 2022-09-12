@@ -5,7 +5,7 @@
 								<link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
 								<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>								<title>107Studio--login</title>
 				</head>
-				<body>
+				<body onload="check()">
 								<h1>这是一个一个一个登录界面啊啊啊啊（恼</h1>
 								<p>出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面</p>
 								<p>请输入用户名</p>
@@ -45,6 +45,34 @@
             }
         })
     }
+    				function check() {
+    								
+								$.ajax({
+												url:"http://101.43.151.15:7777/check",
+            type:"get",
+            dataType:"json",
+                    xhrFields: {
+        withCredentials: true
+    },
+    crossDomain: true,
+            success:    function (data) {
+            				if(data.status==='accept') {
+            			var name=data.username
+            				alert("欢迎，"+name+"!");
+            								window.location.href='/homepage.html'
+            				}
+            				if(data.status==='unaccept') {
+            								//alert('请登录')
+            							//window.location.href='/'
+            							return           				}
+            },
+             error:     function () {
+             alert('未知错误，无法登录(换个浏览器捏)')
+             				//window.location.href='/'
+             }    
+								})
+								
+				}
 							</script>
 												
 						<div id="foot">
