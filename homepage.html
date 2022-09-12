@@ -344,23 +344,19 @@
 	</div>
 	<script>
 				function check() {
-								var names=location.search.substr(1);
-								var name=names.split("=");
-								//alert(name[1]);
-									document.getElementById("username").innerHTML="欢迎，"+name[1]+"!";
-								document.getElementById("userlink").href='/homepage?user='+name[1]
+								document.getElementById("userlink").href='/homepage';
 								$.ajax({
 												url:"http://101.43.151.15:7777/check",
-            type:"post",
+            type:"get",
             dataType:"json",
-            data:JSON.stringify({
-                    userId:name[1]}),
                     xhrFields: {
         withCredentials: true
     },
     crossDomain: true,
             success:    function (data) {
             				if(data.status==='accept') {
+            			var name=data.username
+            				document.getElementById("username").innerHTML="欢迎，"+name+"!";
             								return
             				}
             				if(data.status==='unaccept') {
@@ -374,15 +370,10 @@
 								
 				}
 					function logout() {
-									var names=location.search.substr(1);
-								var name=names.split("=");
-								//alert(name[1]);
 								$.ajax({
 												url:"http://101.43.151.15:7777/logout",
-            type:"post",
+            type:"get",
             dataType:"json",
-            data:JSON.stringify({
-                    userId:name[1]}),
                     xhrFields: {
         withCredentials: true
     },
