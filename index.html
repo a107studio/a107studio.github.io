@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,39 +6,92 @@
         <title>107Studio--login</title>
     </head>
     <body>
-        <h1>这是一个一个一个登录界面啊啊啊啊（恼</h1>
-        <p>出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面，请联系107工作室成员获取最新密码</p>
-        <p>请输入姓名（实名验证）</p>
-        <p><input type="text" value="" id="name"/></p>
-        <p>请输入密码</p>
-        <p><input type="text" value="" id="mytext"/></p>
-        <button onClick="getText()">登录！</button>
-        <script>
-            function getText(){
-            var id=document.getElementById("mytext").value,name=document.getElementById("name").value;
-            if(name==="武文哲") {
-                            for(;;){
-                                            alert("傻逼你还敢来");
-                            }
-            }																																																																												
-            if(id===getAnswer() || name==="test") {
-                        alert("请勿外传，万分感谢！");	window.location.href="https://a107studio.github.io/homepage.html";
-            }else {
-                alert("鸭蛋莫鸭蛋，牡蛎莫牡蛎!任何邪恶，终将绳之以法！"); window.location.href="https://www.bilibili.com/video/BV17r4y1G7gv";
-            }
-                            
-            }
-            function getAnswer() {
-                            var d=new Date();
-                            var ans=d.getFullYear()+d.getMonth()+d.getDate()+1+d.getHours()+d.getMinutes();
-                            ans=ans%107;
-                            ans.toString();
-                            ans="107"+ans+"114";
-                            return ans;
-            }
-        </script>
-        <p>余数计算器<a href="https://www.zuhedaikuan.com/jsq/yushu.aspx">戳这里！</a></p>
-		<p>0107 0428 0749 1070 1391 1605 1926 2247</p>
-		<h2>107Studio制作</h2>
+        <div id="centerize">
+            <h1 align="center">这是一个一个一个登录界面啊啊啊啊（恼</h1>
+            <p align="center">出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面，请联系107工作室成员获取最新密码</p>
+            <p align="center">请输入姓名（实名验证）</p>
+            <p align="center"><input type="text" value="" id="name"/></p>
+            <p align="center">请输入密码</p>
+            <p align="center"><input type="text" value="" id="mytext"/></p>
+            <p align="center"><button onClick="getText()">登录！</button></p>
+            <script>
+                function getText(){
+                var id=document.getElementById("mytext").value,name=document.getElementById("name").value;
+                if(name==="武文哲") {
+                                for(;;){
+                                                alert("傻逼你还敢来");
+                                }
+                }																																																																												
+                if(id===getAnswer() || name==="test") {
+                            alert("请勿外传，万分感谢！");	window.location.href="https://a107studio.github.io/homepage.html";
+                }else {
+                    alert("鸭蛋莫鸭蛋，牡蛎莫牡蛎!任何邪恶，终将绳之以法！"); window.location.href="https://www.bilibili.com/video/BV17r4y1G7gv";
+                }
+                                
+                }
+                function getAnswer() {
+                                var d=new Date();
+                                var ans=d.getHours()+d.getMinutes();
+                                ans=ans%107;
+                                var pass=ans.toString();
+                                // ans="107"+ans+"114";
+                                return pass;
+                }
+            </script>
+            <p align="center">余数计算器<a href="https://www.zuhedaikuan.com/jsq/yushu.aspx">戳这里！</a></p>
+            <p align="center">0107 0428 0749 1070 1391 1605 1926 2247<br>/p>
+            <h2 align="center">107Studio制作</h2>
+        </div>
     </body>
+    <style>
+        button
+        {
+			width: 160px;/*设置按钮宽度*/
+			height: 30px;/*设置按钮高度*/
+			color:white;/*字体颜色*/
+			background-color:tomato;/*按钮背景颜色*/
+			border-radius: 3px;/*让按钮变得圆滑一点*/
+			border-width: 0;/*消去按钮丑的边框*/
+			margin: 0;
+			outline: none;/*取消轮廓*/
+			/* font-family: KaiTi;字体设置为楷体 */
+			font-size: 17px;/*设置字体大小*/
+			text-align: center;/*字体居中*/
+			cursor: pointer;/*设置鼠标箭头手势*/
+		}
+		button:hover
+        {/*鼠标移动时的颜色变化*/
+			background-color:indianred;
+		}
+        #centerize
+        {
+            margin:0 auto;width:1000px;
+        }
+        input
+        {
+            font-size:12px;
+            /* 设置输入框中字体的大小 */
+            height:30px; 
+            /* 设置输入框的高度 */
+            border-radius:4px; 
+            /* 设置输入框的圆角的大小 */
+            border:1px solid #c8cccf;
+            /* 设置输入框边框的粗细和颜色 */
+            color:#986655; 
+            /* 设置输入框中文字的颜色 */
+            outline:0; 
+            /* 将输入框点击的时候出现的边框去掉 */
+            text-align:left; 
+            /* 设置输入框中文字的位置 */
+            padding-left: 10px;
+            display:block; 
+            /* 将输入框设置为块级元素 */
+            cursor: pointer;
+            box-shadow: 2px 2px 5px 1px #ccc;  
+        }
+            input::-webkit-input-placeholder{
+            color: #986655;
+            font-size: 12px;
+        }
+    </style>
 </html>
