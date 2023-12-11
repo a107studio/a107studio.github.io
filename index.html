@@ -1,98 +1,123 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="https://a107studio.github.io/img/logo.ico">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>107Studio--Login</title>
-    </head>
-    <body>
-        <div id="centerize">
-            <h1 align="center">这是一个一个一个登录界面啊啊啊啊（恼</h1>
-            <p align="center">出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面，请联系107工作室成员获取最新密码</p>
-            <p align="center">请输入姓名（实名验证）</p>
-            <p align="center"><input type="text" value="" id="name"/></p>
-            <p align="center">请输入密码</p>
-            <p align="center"><input type="text" value="" id="mytext"/></p>
-            <p align="center"><button onClick="getText()">登录！</button></p>
-            <script>
-                function getText(){
-                var id=document.getElementById("mytext").value,name=document.getElementById("name").value;
-                if(name==="武文哲") {
-                                for(;;){
-                                                alert("傻逼你还敢来");
-                                }
-                }																																																																												
-                if(id===getAnswer() || name==="test") {
-                            alert("请勿外传，万分感谢！");	window.location.href="https://a107studio.github.io/homepage.html";
-                }else {
-                    alert("鸭蛋莫鸭蛋，牡蛎莫牡蛎!任何邪恶，终将绳之以法！"); window.location.href="https://www.bilibili.com/video/BV17r4y1G7gv";
-                }
-                                
-                }
-                function getAnswer() {
-                                var d=new Date();
-                                var ans=d.getHours()+d.getMinutes();
-                                return ans;
-                }
-            </script>
-            <h2 align="center">107Studio制作</h2>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>107Studio--Login</title>
+    <link rel="shortcut icon" href="https://a107studio.github.io/img/logo.ico">
+    <!--==================== Google Fonts =======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--==================== Swiper CSS =======================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!--================== Remixicons CSS =====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--==================== Main CSS =======================-->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!--==================== Header =======================-->
+    <header id="header" class="header">
+        <div class="nav container">
+            <a href="index.html" class="nav__brand">
+                107<span>Studio</span>
+            </a>
         </div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    <style>
-        button
-        {
-			width: 160px;/*设置按钮宽度*/
-			height: 30px;/*设置按钮高度*/
-			color:white;/*字体颜色*/
-			background-color:tomato;/*按钮背景颜色*/
-			border-radius: 3px;/*让按钮变得圆滑一点*/
-			border-width: 0;/*消去按钮丑的边框*/
-			margin: 0;
-			outline: none;/*取消轮廓*/
-			/* font-family: KaiTi;字体设置为楷体 */
-			font-size: 17px;/*设置字体大小*/
-			text-align: center;/*字体居中*/
-			cursor: pointer;/*设置鼠标箭头手势*/
-		}
-		button:hover
-        {/*鼠标移动时的颜色变化*/
-			background-color:indianred;
-		}
-        #centerize
-        {
-            margin:0 auto;width:1000px;
-        }
-        input
-        {
-            font-size:12px;
-            /* 设置输入框中字体的大小 */
-            height:30px; 
-            /* 设置输入框的高度 */
-            border-radius:4px; 
-            /* 设置输入框的圆角的大小 */
-            border:1px solid #c8cccf;
-            /* 设置输入框边框的粗细和颜色 */
-            color:#986655; 
-            /* 设置输入框中文字的颜色 */
-            outline:0; 
-            /* 将输入框点击的时候出现的边框去掉 */
-            text-align:left; 
-            /* 设置输入框中文字的位置 */
-            padding-left: 10px;
-            display:block; 
-            /* 将输入框设置为块级元素 */
-            cursor: pointer;
-            box-shadow: 2px 2px 5px 1px #ccc;  
-        }
-            input::-webkit-input-placeholder{
-            color: #986655;
-            font-size: 12px;
-        }
-    </style>
+    </header>
+
+    <!--==================== Main =======================-->
+    <main class="main">
+        <!--==================== Newsletter =======================-->
+        <section class="newsletter section">
+            <div class="d-grid newsletter__wrapper container">
+                <div class="newsletter__content">
+                    <h2 class="newsletter__title">
+                        登录到107Studio
+                    </h2>
+                    <p class="newsletter__description">
+                        出于对作品的保护以及防止玷污有些人高贵的眼睛，本站特设登录界面，请联系107工作室成员获取最新密码。
+                    </p>
+                </div>
+                <form  class="newsletter__form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="用户名" value="" id="name"><br>
+                        <input type="text" class="form__input" placeholder="密码" value="" id="mytext"><br>
+                        <button class="btn btn--primary" onClick="getText()">
+                            登录到107工作室！
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== Footer =======================-->
+    <footer class="footer">
+        <div class="d-grid footer__wrapper container">
+
+
+
+            
+            <div class="footer__content">
+                <h3 class="footer__brand">107<span>Studio</span></h3>
+                <p class="footer__description">成立于2021年的老牌工作室</p>
+            </div>
+            <div class="footer__content"></div>
+            <div class="footer__content">
+                <h4 class="footer__title">Links</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="https://a107studio.github.io/" class="footer__link">官网首页</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://github.com/a107studio" class="footer__link">Github页面</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://tieba.baidu.com/f?kw=107studio" class="footer__link">107Studio吧主页</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://imgloc.com/107studio" class="footer__link">图床</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content"></div>
+        <p class="footer__copyright container">
+            Copyright © 107 Studio. All Rights Reserved.
+        </p>
+    </footer>
+    <a href="#home" id="scrolltop" class="scrolltop">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!--==================== Swiper JS =======================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--==================== ScrollReveal =====================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--==================== Main JS =======================-->
+    <script src="js/login.js"></script>
+</body>
+<script>
+    function getText(){
+    var id=document.getElementById("mytext").value,name=document.getElementById("name").value;
+    if(name==="武文哲") {
+                    for(;;){
+                                    alert("傻逼你还敢来");
+                    }
+    }																																																																												
+    if(id===getAnswer() || name==="test") {
+                alert("请勿外传，万分感谢！");	window.location.href="https://a107studio.github.io/homepage.html";
+    }else {
+        alert("鸭蛋莫鸭蛋，牡蛎莫牡蛎!任何邪恶，终将绳之以法！"); window.location.href="https://www.bilibili.com/video/BV17r4y1G7gv";
+    }
+                    
+    }
+    function getAnswer() {
+                    var d=new Date();
+                    var ans=d.getHours()+d.getMinutes();
+                    return ans;
+    }
+</script>
 </html>
