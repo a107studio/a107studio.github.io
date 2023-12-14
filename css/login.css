@@ -6,6 +6,7 @@
   --color-white: #fff;
   --color-title: #ffa31a;
   --color-login-background:#99610f;
+  --color-nbing: #68cef0;
   --color-text: #303030;
   --bg-gradient: linear-gradient(180deg, #ffffff 0%, #d6f7ff 100%);
   /* Typography
@@ -563,10 +564,28 @@ body{
   text-align: center;
   max-width: 80rem;
 }
-
 .newsletter__title,
 .newsletter__description{
   color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+
+.nbing__wrapper{
+  background-color: var(--color-nbing);
+  border-radius: var(--border-radius-lg);
+  padding: 5rem;
+  justify-content: center;
+  text-align: center;
+  max-width: 80rem;
+}
+.nbing__title,
+.nbing__description{
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+.nbing__stress{
+  color:lawngreen;
   margin-bottom: 2rem;
 }
 
