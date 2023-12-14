@@ -53,6 +53,15 @@
                 </form>
             </div>
         </section>
+        <section class="nbing section">
+            <div class="d-grid nbing__wrapper container">
+                <div class="nbing__content">
+                    <h2 class="nbing__title">访问NewBing</h2>
+                    <p class="nbing__description">107工作室已在本网站上部署开源New Bing项目。第一次使用请先点击绿色的continue按钮，之后稍作等待即可。每一次最多支持8KB的字符，支持对图片的分析，且没有Token或Prompt的限制。初次打开网速可能较慢，部分地区使用时可能较慢。</p>
+                    <button class="btn btn--primary" onclick="gonewbing()">点此前往</button>
+                </div>
+            </div>    
+        </section>
     </main>
 
     <!--==================== Footer =======================-->
@@ -118,6 +127,10 @@
                     var d=new Date();
                     var ans=d.getHours()+d.getMinutes();
                     return ans;
+    }
+    function gonewbing()
+    {
+        window.location.href="https://vvj3qy-3000.csb.app/";
     }
 </script>
 </html>
