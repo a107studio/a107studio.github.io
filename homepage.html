@@ -1,406 +1,318 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh"> 
 <head>
-	<meta charset="UTF-8" />
-	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
-	<title>107Studio</title>
-	<meta name="Keywords" content="107Studio"/>
-	<meta name="Description" content="个人内容"/>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 	<link rel="shortcut icon" href="img/logo.ico">
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-			text-decoration: none;
-			list-style-type: none;
-		}
-		html,body{
-			overflow-x: hidden;
-			background:url(img/123.jpeg) fixed 100% 100%;
-		}
-		#table{
-			width: 1000px;
-			margin: 0 auto;
-			border-radius: 10px;
-			overflow: hidden;
-		}
-		#table td{
-			text-align: center;
-			transition: all 0.3s;
-			width: 190px;
-			height: 50px;
-		}
-		#table .blog:hover{
-			animation: bounce 0.5s;
-			background-color: cornflowerblue;
-		}
-		#table .sever:hover{
-			background-color: indianred;
-			animation: rubberBand 0.5s;
-		}
-		#table .jc:hover{
-			background-color: green;
-			animation: bounceIn 0.5s;
-		}
-		#table td:hover a{
-			color: white;
-		}
-		.blog a{
-			color: cadetblue;
-			transition: all 0.3s;
-		}
-		.sever a{
-			color: indianred;
-			transition: all 0.3s;
-		}
-		.jc a{
-			color: green;
-			transition: all 0.3s;
-		}
-		.qaz a{
-			color: chocolate;
-			transition: all 0.3s;
-		}
-		.blog{
-			border: 1px solid cornflowerblue;
-		}
-		.sever{
-			border: 1px solid indianred;
-		}
-		.jc{
-			border: 1px solid green;
-		}
-		#top{
-			width: 100%;
-		}
-		#top img{
-			width: 10%;
-		}
-		#nav{
-			width: 100%;
-			height: 50px;
-			background-color: cadetblue;
-			margin-bottom: 10px;
-		}
-		#nav ul{
-			width: 100%;
-			height: 50px;
-			line-height: 50px;
-			display: flex;
-			justify-content: space-around;
-			text-align: center;
-		}
-		#nav ul li{
-			width: 130px;
-			height: 100%;
-			display: inline-block;
-			transition: all 0.3s;
-		}
-		#nav ul li:hover{
-			background-color: lightblue;
-		}
-		#nav a{
-			color: white;
-			font-size: 20px;
-		}
-		#foot{
-			width: 100%;
-			text-align: center;
-		}
-		.wz{
-			border: 1px solid purple;
-		}
-		.wz a{
-			color: purple;
-			transition: all 0.3s;
-		}
-		
-		#table .wz:hover{
-			background-color: purple;
-			animation: flipInX 0.5s;
-		}
-		
-		.ds{
-			border: 1px solid palevioletred;
-		}
-		.ds a{
-			color: palevioletred;
-			transition: all 0.3s;
-		}
-		#table .ds:hover{
-			background-color: palevioletred;
-			animation: tada 0.5s;
-		}
-		.qaz{
-			border: 1px solid chocolate;
-		}
-		.qaz a{
-			color: chocolate;
-			transition: all 0.3s;
-		}
-		#table .qaz:hover{
-			background-color: chocolate;
-			animation: tada 0.5s;
-		}
-	</style>
-</head>
-<body>
-	<div id="top">
-		<div id="nav" class="animated flipInX">
-			<ul>
-				<!-- <a href="" id="userlink"><li id="username"></li></a> -->
-				<!-- <a href="javascript:logout()"> 登出</a> -->
-				<a href="https://a107studio.github.io/download" target="_blank"><li>下载文献</li></a>
-				<a href="https://github.com/a107studio" target="_blank"><li>107Studio</li></a>
-			</ul>
-		</div>
-	</div>
-	<script src="api.php"></script>
-	<table border="1" cellspacing="0" cellpadding="0" id="table" class="animated zoomIn">
-		<!--标题-->
-		<tr id="one">
-			<td colspan="6" style="background-color: cornflowerblue;color: white;font-size: 20px;font-weight: bold;border: 2px solid cornflowerblue;">资料/文献/史料</td>
-		</tr>
-		<!--对应的网站链接-->
-		<tr>
-			<td class="blog"><a href="file/total.txt" target="_blank">圣言录全集</a></td>
-			<td class="blog"><a href="file/Novel.html" target="_blank">小说全集</a></td>
-			<td class="blog"><a href="file/200kuai.html" target="_blank">200块吃新乡</a></td>
-			<td class="blog"><a href="file/2012end.html" target="_blank">说点儿什么</a></td>
-			<td class="blog"><a href="file/chinese.html" target="_blank">这是我的语文作业</a></td>
-		</tr>
-		<tr>
-			<td class="blog"><a href="file/fallinlove.html" target="_blank">你已经爱上她（他）</a></td>
-			<td class="blog"><a href="file/finally.html" target="_blank">终于 放开了</a></td>
-			<td class="blog"><a href="file/forget.html" target="_blank">忘记也是一种爱</a></td>
-			<td class="blog"><a href="file/girlunknown.html" target="_blank">很多女孩都不知道</a></td>
-			<td class="blog"><a href="file/once.html" target="_blank">恋人一样</a></td>
-		</tr>
-		<tr>
-			<td class="blog"><a href="file/really.html" target="_blank">真的真的</a></td>
-			<td class="blog"><a href="file/stone.html" target="_blank">对石头的话</a></td>
-			<td class="blog"><a href="file/broken.html" target="_blank">破碎 无双</a></td>
-			<td class="blog"><a href="file/fangxia.html" target="_blank">拿不起来</a></td>
-			<td class="blog"><a href="file/class16.html" target="_blank">十六班的必看</a></td>
-		</tr>
-		<tr>
-			<td class="blog"><a href="file/timetogiveup.html" target="_blank">是该放弃的时候了</a></td>
-			<td class="blog"><a href="file/train.html" target="_blank">晕火车</a></td>
-			<td class="blog"><a href="file/sthtosay.html" target="_blank">一些话语</a></td>
-			<td class="blog"><a href="###" target="_blank">待添加</a></td>
-		        <td class="blog"><a href="file/daily.html" target="_blank">名言警句</a></td>
-		</tr>
-		<tr>
-			<td class="blog"><a href="file/18.html" target="_blank">18个朋友</a></td>
-			<td class="blog"><a href="###" target="_blank">待添加</a></td>
-			<td class="blog"><a href="###" target="_blank">待添加</a></td>
-			<td class="blog"><a href="###" target="_blank">待添加</a></td>
-			<td class="blog"><a href="###" target="_blank">待添加</a></td>
+	<title>107Studio</title>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="css/theme.css">
 
-		</tr>
-		<!--标题-->
-		<tr>
-			<td colspan="6" style="background-color: indianred;color: white;font-size: 20px;font-weight: bold;border: 2px solid indianred;">一零七出版社教材</td>
-		</tr>
-		<tr>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer1.html" target="_blank">第一册</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer2.html" target="_blank">第二册</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer3.html" target="_blank">第三册</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer4.html" target="_blank">选修1</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer5.html" target="_blank">选修2</a></td>
-		</tr>
-		<tr>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer6.html" target="_blank">选修3</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer7.html" target="_blank">选修4</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer8.html" target="_blank">选修5</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer9.html" target="_blank">选修6</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer10.html" target="_blank">选修7</a></td>
-		</tr>
-		
-		<tr>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer11.html" target="_blank">选修8</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer12.html" target="_blank">拾遗1</a></td>
-			<td class="sever"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer13.html" target="_blank">拾遗2</a></td>
-			<td class="sever"><a href="###" target="_blank">待添加</a></td>
-			<td class="sever"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<!--标题-->
-		<tr>
-			<td colspan="6" style="background-color: green;color: white;font-size: 20px;font-weight: bold;border: 2px solid green;">学术交流角</td>
-		</tr>
-			<tr>
-			<td class="jc"><a href="###" target="_blank">-----</a></td>
-			<td class="jc"><a href="###" target="_blank">----→</a></td>
-			<td class="jc"><a href="academic-corner/index.html" target="_blank">交流角首页</a></td>
-			<td class="jc"><a href="###" target="_blank">←----</a></td>
-			<td class="jc"><a href="###" target="_blank">-----</a></td>
-		</tr>
-		<tr>
-			<td class="jc"><a href="academic-corner/math.html" target="_blank">数学专区</a></td>
-			<td class="jc"><a href="academic-corner/chinese.html" target="_blank">语文专区</a></td>
-			<td class="jc"><a href="academic-corner/music.html" target="_blank">音乐专区</a></td>
-			<td class="jc"><a href="academic-corner/kichiku.html" target="_blank">鬼畜专区</a></td>
-			<td class="jc"><a href="academic-corner/english.html" target="_blank">进步专区</a></td>
+</head> 
 
-		</tr>
-		<tr>
-			<td class="jc"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewerchi.html" target="_blank">语文试卷</a></td>
-			<td class="jc"><a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewereng.html" target="_blank">英语试卷</a></td>
-			<td class="jc"><a href="###" target="_blank">待添加</a></td>
-			<td class="jc"><a href="###" target="_blank">待添加</a></td>
-			<td class="jc"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			
-			<td colspan="6" style="background-color: chocolate;color: white;font-size: 20px;font-weight: bold;border: 2px solid chocolate;">盈篇满籍</td>
-		</tr>
-		<tr>
-			<td class="qaz"><a href="/teaching-material/article/cai.html" target="_blank">盈篇满籍-蔡</a></td>
-			<td class="qaz"><a href="/teaching-material/article/tian.html" target="_blank">盈篇满籍-田</a></td>
-			<td class="qaz"><a href="/teaching-material/article/wei.html" target="_blank">盈篇满籍-炜</a></td>
-			<td class="qaz"><a href="/teaching-material/article/yan.html" target="_blank">盈篇满籍-燕</a></td>
-			<td class="qaz"><a href="/teaching-material/article/za.html" target="_blank">盈篇满籍-杂</a></td>
-		</tr>
-		<tr>
-			<td class="qaz"><a href="/teaching-material/article/shici.html" target="_blank">盈篇满籍-诗词</a></td>
-			<td class="qaz"><a href="/teaching-material/article/wyw.html" target="_blank">盈篇满籍-文言文</a></td>
-			<td class="qaz"><a href="/teaching-material/article/xdw.html" target="_blank">盈篇满籍-现代文</a></td>
-			<td class="qaz"><a href="/teaching-material/article/total.html" target="_blank">盈篇满籍-全</a></td>
-			<td class="qaz"><a href="/teaching-material/article/haike.html" target="_blank">盈篇满籍-海客</a></td>
-		</tr>
-		
-		<tr>
+<body>    
+    <header class="header fixed-top">	 
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+	                <div class="site-logo"><a class="navbar-brand" href="/homepage.html"><span class="logo-text">107</span><span class="logo-text-2"> Studio</span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+			            <li class="list-inline-item"><a href="https://tieba.baidu.com/f?kw=107studio">贴</a></li>
+		                <li class="list-inline-item"><a href="https://imgloc.com/107studio">图</a></li>
+						<li class="list-inline-item"><a href="https://github.com/a107studio">Gb</a></li>
+		            </ul><!--//social-list-->
+		            <a href="https://a107studio.github.io/download/" class="btn btn-primary d-none d-lg-flex">下载文献</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="page-header theme-bg-dark py-5 text-center position-relative">
+	    <div class="theme-bg-shapes-right"></div>
+	    <div class="theme-bg-shapes-left"></div>
+	    <div class="container">
+		    <h1 class="page-heading single-col-max mx-auto">107工作室官方页面</h1><br>
+		    <div class="page-intro single-col-max mx-auto">正气一旦缺席，邪祟便会趁虚而入！——璀璨星宇</div>
+	    </div>
+    </div><!--//page-header-->
+   <div class="page-content">
+	    <div class="container">
+		    <div class="docs-overview py-5">
+			    <div class="row justify-content-center">
+				    <div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">1</span>
+							        <span class="card-title-text">WB圣言录（一）</span>
+							    </h5>
+							    <div class="card-text">
+								    记录了许多WB老师青涩时期的内容。<br>
+									<a href="file/total.txt" >圣言录全集</a>&emsp;
+									<a href="file/Novel.html" >小说全集</a>&emsp;
+									<a href="file/200kuai.html" >200块吃新乡</a>&emsp;
+									<a href="file/2012end.html" >说点儿什么</a>&emsp;
+									<a href="file/chinese.html" >这是我的语文作业</a>&emsp;
+									<a href="file/fallinlove.html" >你已经爱上她（他）</a>&emsp;
+									<a href="file/finally.html" >终于 放开了</a>&emsp;
+									<a href="file/forget.html" >忘记也是一种爱</a>&emsp;
+									<a href="file/once.html" >恋人一样</a>&emsp;
+									<a href="file/girlunknown.html" >很多女孩都不知道</a>&emsp;
+							    </div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
 
-			<td colspan="6" style="background-color: purple;color: white;font-size: 20px;font-weight: bold;border: 2px solid purple;">项目</td>
-		</tr>
-		<tr>
-			<td class="wz"><a href="pianogame/ts.html" target="_blank">别踩田师</a></td>
-			<!-- <td class="wz"><a href="pianogame/index.html" target="_blank">雷普主角</a></td> -->
-			<td class="wz"><a href="graduation/index.html" target="_blank">毕业赠言</a></td>
-			<td class="wz"><a href="file/wannasay.html" target="_blank">对母校说的话</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-			<td class="wz"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td colspan="6" style="background-color: palevioletred;color: white;font-size: 20px;font-weight: bold;border: 2px solid palevioletred;">推荐</td>
-		</tr>
-		<tr>
-			<td class="ds"><a href="https://www.bilibili.com/video/BV1fV411W7Ss" target="_blank">Zood</a></td>
-			<td class="ds"><a href="https://www.bilibili.com/video/BV1xh411q76p" target="_blank">Zood完整版</a></td>
-			<td class="ds"><a href="https://www.bilibili.com/video/BV18K4y1n7xD" target="_blank">1376心想事成</a></td>
-			<td class="ds"><a href="https://music.163.com/#/artist?id=46673236" target="_blank">理塘丁真-网易云</a></td>
-			<td class="ds"><a href="https://music.163.com/#/song?id=1854709891" target="_blank">天空下的温暖</a></td>
-		</tr>
-		<tr>
-			<td class="ds"><a href="https://codepen.io/dffzmxj/full/LYybrRP" target="_blank">拉格朗日插值114</a></td>
-			<td class="ds"><a href="https://www.zhihu.com/question/51424346/answer/125916563" target="_blank">LV4每年可获得3个月……</a></td>
-            <td class="ds"><a href="https://www.zhihu.com/question/46667028/answer/102445298" target="_blank">B站可能会倒闭……</a></td>
-			<td class="ds"><a href="https://translate.google.cn" target="_blank">Google翻译</a></td>
-			<td class="ds"><a href="http://m.wyzxwk.com/content.php?classid=27&cpage=0&id=47427" target="_blank">教育中的问题</a></td>
-		</tr>
-		<tr>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-		<tr>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-			<td class="ds"><a href="###" target="_blank">待添加</a></td>
-		</tr>
-	</table>
-	<div id="foot">
-		<p>All Rights Reserved. 107Studio出品。</p>
-	</div>
-	<!-- <script>
-				function check() {
-								document.getElementById("userlink").href='/homepage';
-								$.ajax({
-												url:"https://101.43.151.15:7777/check",
-            type:"get",
-            dataType:"json",
-                    xhrFields: {
-        withCredentials: true
-    },
-    crossDomain: true,
-            success:    function (data) {
-            				if(data.status==='accept') {
-            			var name=data.username
-            				document.getElementById("username").innerHTML="欢迎，"+name+"!";
-            								return
-            				}
-            				if(data.status==='unaccept') {
-            								alert('请登录')
-            							window.location.href='/'  
-      
-    				}
-            },
-             error:     function () {
-             				window.location.href='/'
-             }    
-								})
-								
-				}
-					function logout() {
-								$.ajax({
-												url:"https://101.43.151.15:7777/logout",
-            type:"get",
-            dataType:"json",
-                    xhrFields: {
-        withCredentials: true
-    },
-    crossDomain: true,
-    success:    function (data) {
-    alert('感谢您的使用！')
-    window.location.href='/'
-            				         				
-            },
-             error:     function () {
-             
-             				window.location.href='/'
-             }
-								})
-					}	
-	</script> -->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">2</span>
+							        <span class="card-title-text">WB圣言录（二）</span>
+							    </h5>
+							    <div class="card-text">
+								    记录了许多WB老师青涩时期的内容。<br>
+									<a href="file/really.html" >真的真的</a>&emsp;
+									<a href="file/stone.html" >对石头的话</a>&emsp;
+									<a href="file/broken.html" >破碎 无双</a>&emsp;
+									<a href="file/fangxia.html" >拿不起来</a>&emsp;
+									<a href="file/class16.html" >十六班的必看</a>&emsp;
+									<a href="file/timetogiveup.html" >是该放弃的时候了</a>&emsp;
+									<a href="file/train.html" >晕火车</a>&emsp;
+									<a href="file/sthtosay.html" >一些话语</a>&emsp;
+									<a href="">学士学位论文</a>
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">3</span>
+							        <span class="card-title-text">107语文教材</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer1.html" >第一册</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer2.html" >第二册</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer3.html" >第三册</a>&emsp;<br>
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer4.html" >选修1</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer5.html" >选修2</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer6.html" >选修3</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer7.html" >选修4</a>&emsp;<br>
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer8.html" >选修5</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer9.html" >选修6</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer10.html" >选修7</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer11.html" >选修8</a>&emsp;<br>
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer12.html" >拾遗1</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewer13.html" >拾遗2</a>&emsp;
+							    </div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">4</span>
+							        <span class="card-title-text">学术交流角</span>
+							    </h5>
+							    <div class="card-text">
+								    知识的殿堂。&emsp;<a href="academic-corner/index.html" >交流角首页</a>&emsp;<br>
+									<a href="academic-corner/math.html" >数学专区</a>&emsp;
+									<a href="academic-corner/chinese.html" >语文专区</a>&emsp;
+									<a href="academic-corner/music.html" >音乐专区</a>&emsp;
+									<a href="academic-corner/kichiku.html" >鬼畜专区</a>&emsp;
+									<a href="academic-corner/english.html" >进步专区</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewerchi.html" >语文试卷</a>&emsp;
+									<a href="https://a107studio.github.io/teaching-material/Pdfvital/web/viewereng.html" >英语试卷</a>&emsp;
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">5</span>
+							        <span class="card-title-text">盈篇满籍系列</span>
+							    </h5>
+							    <div class="card-text">
+								    按照人物/体裁，分门别类地进行收集。<br>
+									<a href="/teaching-material/article/cai.html" >盈篇满籍-蔡</a>&emsp;
+									<a href="/teaching-material/article/tian.html" >盈篇满籍-田</a>&emsp;
+									<a href="/teaching-material/article/wei.html" >盈篇满籍-炜</a>&emsp;
+									<a href="/teaching-material/article/yan.html" >盈篇满籍-燕</a>&emsp;
+									<a href="/teaching-material/article/haike.html" >盈篇满籍-海客</a>&emsp;
+									<a href="/teaching-material/article/za.html" >盈篇满籍-杂</a>&emsp;
+									<a href="/teaching-material/article/shici.html" >盈篇满籍-诗词</a>&emsp;
+									<a href="/teaching-material/article/wyw.html" >盈篇满籍-文言文</a>&emsp;
+									<a href="/teaching-material/article/xdw.html" >盈篇满籍-现代文</a>&emsp;
+									<a href="/teaching-material/article/total.html" >盈篇满籍-全</a>&emsp;
+
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">6</span>
+							        <span class="card-title-text">休闲小游戏</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="pianogame/ts.html" >就踩田师</a>&emsp;
+									<a href="https://game.bun.sh.cn" >红警在线</a>&emsp;
+									<a href="https://ys.mihoyo.com/cloud/" >云·原神</a>&emsp;
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">7</span>
+							        <span class="card-title-text">璀璨星宇专区</span>
+							    </h5>
+							    <div class="card-text">
+								    记录了许多关于General的内容。将军的uid是631651838。不要再问找不到将军的B站号了，谢谢各位。<br>
+									<a href="https://a107studio.github.io/sing/" >歌手直通车页面</a>&emsp;
+									<a href="https://a107studio.github.io/sing/zhitiao/" >纸条节选</a>&emsp;
+									<a href="https://static-play.kg.qq.com/node/personal?uid=60949c84272f3f8e34" >全民K歌主页</a>&emsp;
+									<a href="https://space.bilibili.com/631651838" >B站用户页面</a>&emsp;
+									<a href="file/dick.html" >读《牧羊猪》有感</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8774142981">107抽象人物志：将军</a>
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">8</span>
+							        <span class="card-title-text">海客马姐专区</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="/teaching-material/article/haike.html" >盈篇满籍-海客</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8771533887" >107抽象人物志：海客</a>&emsp;
+									<a href="file/mjpyq.html" >马姐1224朋友圈爆典</a>&emsp;
+									<a href="https://a107studio.github.io/ocean/index.html" >海客扫把照片</a>&emsp;
+									<a href="###" >待添加</a>&emsp;
+									<a href="###" >待添加</a>&emsp;
+									<a href="###" >待添加</a>&emsp;
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">9</span>
+							        <span class="card-title-text">经典永流传</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="https://www.bilibili.com/video/BV1fV411W7Ss" >Zood</a>&emsp;
+									<a href="https://www.bilibili.com/video/BV1xh411q76p" >Zood完整版</a>&emsp;
+									<a href="https://www.bilibili.com/video/BV18K4y1n7xD" >1376心想事成</a>&emsp;
+									<a href="https://www.bilibili.com/video/BV1UW4y1N79w" >I Got Smoke</a>&emsp;
+									<a href="https://www.bilibili.com/video/BV1N84y1P7en" >烟Distance</a>&emsp;
+									<a href="https://www.bilibili.com/video/BV1P94y167HS" >肺痒痒补档</a>&emsp;
+									<a href="https://www.bilibili.com/video/BV1pj411b7QZ" >See You Again 2倍速</a>&emsp;
+									<a href="https://music.163.com/#/artist?id=46673236" >理塘丁真-网易云</a>&emsp;
+									<a href="https://music.163.com/#/song?id=1854709891" >天空下的温暖</a>&emsp;
+									<a href="https://codepen.io/dffzmxj/full/LYybrRP" >拉格朗日插值114</a>&emsp;
+									<a href="https://www.zhihu.com/question/51424346/answer/125916563" >LV4每年可获得3个月……</a>&emsp;
+									<a href="https://www.zhihu.com/question/46667028/answer/102445298" >B站可能会倒闭……</a>&emsp;
+									<a href="http://m.wyzxwk.com/content.php?classid=27&cpage=0&id=47427" >教育中的问题</a>&emsp;
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">10</span>
+							        <span class="card-title-text">107抽象人物志专区</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="https://tieba.baidu.com/p/8771533887">107抽象人物志：海客</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8774142981">107抽象人物志：将军</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8767188114">107抽象人物志：陈玉伟</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8770268288">107抽象人物志：蔡师</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8768222734">107抽象人物志：田师</a>&emsp;
+									<a href="https://tieba.baidu.com/p/8770245906">107抽象人物志DLC：宇父</a>
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">11</span>
+							        <span class="card-title-text">薛神专区</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="file/18.html" >18个朋友</a>&emsp;
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder me-2">12</span>
+							        <span class="card-title-text">其余杂项</span>
+							    </h5>
+							    <div class="card-text">
+									<a href="graduation/index.html" >毕业赠言</a>&emsp;
+									<a href="https://vvj3qy-3000.csb.app/" >New Bing GPT-4</a>&emsp;
+
+									<a href="###" >待添加</a>&emsp;
+									<a href="###" >待添加</a>&emsp;
+									<a href="###" >待添加</a>&emsp;
+								</div>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+			    </div><!--//row-->
+		    </div><!--//container-->
+		</div><!--//container-->
+    </div><!--//page-content-->
+
+    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
+	    <div class="theme-bg-shapes-right"></div>
+	    <div class="theme-bg-shapes-left"></div>
+	    <div class="container">
+		    <div class="pt-3 text-center">
+			    <a class="btn btn-light" href="file/aboutus.html/">关于我们<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+		    </div>
+	    </div>
+    </section><!--//cta-section-->
+
+    <footer class="footer">
+	    <div class="footer-bottom text-center py-5">
+			<small class="copyright">107工作室出品。All Rights Reserved.<br>地址：东京都世田谷区北泽2丁目。
+	    </div>
+    </footer>
+       
+    <!-- Javascript -->          
+    <script src="https://a107studio.github.io/academic-corner/css/popper.min.js"></script>
+    <script src="https://a107studio.github.io/academic-corner/css/bootstrap.min.js"></script>  
 </body>
-</html>
+</html> 
+
