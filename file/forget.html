@@ -1,63 +1,70 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--乱码了就改成gbk-->
-        <script src="https://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="common.js"></script>
-        <script src="read.js"></script>
-        <script src="book.js"></script>
-        <title>忘记也是一种爱</title><!---标题-->
-        <link href='style.css' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
-    </head>
-    <body>
-        <div id='book'>
-            <div class="path"><div class="p"><a href="https://a107studio.github.io/">107Studio</a> &gt;文章名称 <!--这里填名字--><span class="oninfo"><script>textselect();</script><div id="page_set">
-                <select onchange="javascript:setFont(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="宋体">字体</option><option value="方正启体简体">默认</option><option value="黑体">黑体</option><option value="楷体_GB2312">楷体</option><option value="微软雅黑">雅黑</option><option value="方正启体简体">启体</option><option value="宋体">宋体</option></select>
-                <select onchange="javascript:setColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#000">颜色</option><option value="#000">默认</option><option value="#9370DB">暗紫</option><option value="#2E8B57">藻绿</option><option value="#2F4F4F">深灰</option><option value="#778899">青灰</option><option value="#800000">栗色</option><option value="#6A5ACD">青蓝</option><option value="#BC8F8F">玫褐</option><option value="#F4A460">黄褐</option><option value="#F5F5DC">米色</option><option value="#F5F5F5">雾白</option></select>
-                <select onchange="javascript:setSize(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#E9FAFF">大小</option><option value="19pt">默认</option><option value="10pt">10pt</option><option value="12pt">12pt</option><option value="14pt">14pt</option><option value="16pt">16pt</option><option value="18pt">18pt</option><option value="20pt">20pt</option><option value="22pt">22pt</option><option value="25pt">25pt</option><option value="30pt">30pt</option></select>
-                <select name="scrollspeed" id="scrollspeed" onchange="javascript:setSpeed(this.options[this.selectedIndex].value);"><option value="5">滚屏</option><option value="1">最慢</option><option value="2">慢2</option><option value="3">慢3</option><option value="4">中4</option><option value="5">中5</option><option value="6">中6</option><option value="7">快7</option><option value="8">快8</option><option value="9">快9</option><option value="10">最快</option></select><select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#E9FAFF" style="background-color: #E9FAFF;">用不了</option><option value="#E9FAFF" style="background-color: #E9FAFF;">默认</option><option value="#FFFFFF" style="background-color: #FFFFFF;">白雪</option><option value="#000000" style="background-color: #000000;color:#FFFFFF;">漆黑</option><option value="#FFFFED" style="background-color: #FFFFED;">明黄</option><option value="#EEFAEE" style="background-color: #EEFAEE;">淡绿</option><option value="#CCE8CF" style="background-color: #CCE8CF;">草绿</option><option value="#FCEFFF" style="background-color: #FCEFFF;">红粉</option><option value="#EFEFEF" style="background-color: #EFEFEF;">深灰</option><option value="#F5F5DC" style="background-color: #F5F5DC;">米色</option><option value="#D2B48C" style="background-color: #D2B48C;">茶色</option><option value="#C0C0C0" style="background-color: #E7F4FE;">银色</option></select>
-                <select onchange="javascript:setWidth(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="95%">宽度</option><option value="95%">默认</option><option value="85%">85%</option><option value="76%">75%</option><option value="67%">65%</option><option value="53%">50%</option><option value="41%">40%</option></select>
-                翻页<input type="checkbox" name="autopage" id="autopage" onchange="javascript:setAutopage();" value="">&nbsp;夜间<input type="checkbox" name="night" id="night" onchange="javascript:setNight();" value=""></div>
-                </span>
-                </div></div>
-            <div class='content'>
-                <h1>忘记也是一种爱</h1><!---标题-->
-                <div id='content' class='showtxt'>
-                <!--说明：1.在两个分界线中间打字 2.<br>是空一行的意思 3.按注释弄，没标注释的不要改-->
-                <!--分界线，以下可写文章-->
-                2007-03-01 15:46:05<br>
-                人生的路很长
-                <br>
-                路途中会遇到很多
-                <br>
-                亲人 朋友 恋人
-                <br>
-                都会与我们不期而遇
-                <br><br>
-                但又或许只是过眼烟云
-                <br>
-                多了一些惦念罢了<br>
-                真正值得珍惜的出现了吗？<br>
-                一辈子能遇到几个会记忆永恒的瞬间<br>
-                也就满意了<br>
-                <br>
-                没理由为了想念而拼命争取<br>
-                摘些记忆吝啬地藏在心间<br>
-                原本不会松手<br>
-                当手和心都已经融化<br>
-                只能慢慢忘掉<br>
-                也许 忘记也是一种爱<br>
+﻿<!DOCTYPE html>
+<html>
 
-                ......
-                <!--分界线，以上可写文章-->
-                <div class="page_chapter">
-                    <ul>
-                        <li><a href="###">上一篇</a></li><!--到时候看着填-->
-                        <li><a href="https://a107studio.github.io/homepage.html">返回目录</a></li><!--回主页，勿动-->
-                        <li><a href="###">下一篇</a></li><!--到时候看着填-->
-                        <li><a  href='supportus.html'>support us</a>
-                </li>
-                    </ul>
-                </div>
-    </body>
+<head>
+    <title>忘记也是一种爱</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://a107studio.github.io/css/file.css">
+    <link rel="shortcut icon" href="https://a107studio.github.io/img/logo.ico">
+</head>
+
+<body for="html-export">
+    <div class="markdown-preview">
+        <h1 class="header">
+            <center>忘记也是一种爱</center>
+        </h1>
+        <center>2007-03-01 15:46:05</center>
+        <!-- 下面p标签内可以写文章，每一段开头要加上<br>&emsp;&emsp; span标签可以选定颜色，-->
+        <!-- <strong>内部写加粗</strong> <span class="blue">132</span><i>i标签使得文字变成斜体</i><mark>mark标签用于高亮文本</mark> -->
+        <p>
+            人生的路很长
+            <br>
+        </p>
+        <p>
+            路途中会遇到很多
+            <br>
+        </p>
+        <p>
+            亲人 朋友 恋人
+            <br>
+        </p>
+        <p>
+            都会与我们不期而遇
+            <br>
+        </p>
+        <p><br></p>
+        <p>
+            但又或许只是过眼烟云
+            <br>
+        </p>
+        <p>
+            多了一些惦念罢了<br></p>
+        <p>
+            真正值得珍惜的出现了吗？<br></p>
+        <p>
+            一辈子能遇到几个会记忆永恒的瞬间<br></p>
+        <p>
+            也就满意了<br></p>
+        <p>
+            <br>
+        </p>
+        <p>
+            没理由为了想念而拼命争取<br></p>
+        <p>
+            摘些记忆吝啬地藏在心间<br></p>
+        <p>
+            原本不会松手<br></p>
+        <p>
+            当手和心都已经融化<br></p>
+        <p>
+            只能慢慢忘掉<br></p>
+        <p>
+            也许 忘记也是一种爱<br></p>
+    </div>
+</body>
+<footer>
+    <center><a href="https://a107studio.github.io/homepage.html" class="btn btn-primary">回107主页面</a></center>
+</footer>
+
 </html>

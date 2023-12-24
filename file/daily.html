@@ -1,87 +1,75 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--乱码了就改成gbk-->
-        <script src="https://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="common.js"></script>
-        <script src="read.js"></script>
-        <script src="book.js"></script>
-        <title>金句</title><!---标题-->
-        <link href='style.css' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="https://raw.githubusercontent.com/a107studio/a107studio.github.io/main/img/logo.ico">
-    </head>
-    <body>
-        <div id='book'>
-            <div class="path"><div class="p"><a href="https://a107studio.github.io/">107Studio</a> &gt;金句<!--这里填名字--><span class="oninfo"><script>textselect();</script><div id="page_set">
-                <select onchange="javascript:setFont(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="宋体">字体</option><option value="方正启体简体">默认</option><option value="黑体">黑体</option><option value="楷体_GB2312">楷体</option><option value="微软雅黑">雅黑</option><option value="方正启体简体">启体</option><option value="宋体">宋体</option></select>
-                <select onchange="javascript:setColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#000">颜色</option><option value="#000">默认</option><option value="#9370DB">暗紫</option><option value="#2E8B57">藻绿</option><option value="#2F4F4F">深灰</option><option value="#778899">青灰</option><option value="#800000">栗色</option><option value="#6A5ACD">青蓝</option><option value="#BC8F8F">玫褐</option><option value="#F4A460">黄褐</option><option value="#F5F5DC">米色</option><option value="#F5F5F5">雾白</option></select>
-                <select onchange="javascript:setSize(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#E9FAFF">大小</option><option value="19pt">默认</option><option value="10pt">10pt</option><option value="12pt">12pt</option><option value="14pt">14pt</option><option value="16pt">16pt</option><option value="18pt">18pt</option><option value="20pt">20pt</option><option value="22pt">22pt</option><option value="25pt">25pt</option><option value="30pt">30pt</option></select>
-                <select name="scrollspeed" id="scrollspeed" onchange="javascript:setSpeed(this.options[this.selectedIndex].value);"><option value="5">滚屏</option><option value="1">最慢</option><option value="2">慢2</option><option value="3">慢3</option><option value="4">中4</option><option value="5">中5</option><option value="6">中6</option><option value="7">快7</option><option value="8">快8</option><option value="9">快9</option><option value="10">最快</option></select><select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="#E9FAFF" style="background-color: #E9FAFF;">用不了</option><option value="#E9FAFF" style="background-color: #E9FAFF;">默认</option><option value="#FFFFFF" style="background-color: #FFFFFF;">白雪</option><option value="#000000" style="background-color: #000000;color:#FFFFFF;">漆黑</option><option value="#FFFFED" style="background-color: #FFFFED;">明黄</option><option value="#EEFAEE" style="background-color: #EEFAEE;">淡绿</option><option value="#CCE8CF" style="background-color: #CCE8CF;">草绿</option><option value="#FCEFFF" style="background-color: #FCEFFF;">红粉</option><option value="#EFEFEF" style="background-color: #EFEFEF;">深灰</option><option value="#F5F5DC" style="background-color: #F5F5DC;">米色</option><option value="#D2B48C" style="background-color: #D2B48C;">茶色</option><option value="#C0C0C0" style="background-color: #E7F4FE;">银色</option></select>
-                <select onchange="javascript:setWidth(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor"><option value="95%">宽度</option><option value="95%">默认</option><option value="85%">85%</option><option value="76%">75%</option><option value="67%">65%</option><option value="53%">50%</option><option value="41%">40%</option></select>
-                翻页<input type="checkbox" name="autopage" id="autopage" onchange="javascript:setAutopage();" value="">&nbsp;夜间<input type="checkbox" name="night" id="night" onchange="javascript:setNight();" value=""></div>
-                </span>
-                </div></div>
-                <div class='content'>
-                    <h1>金句</h1><!---标题-->
-                    <div id='content' class='showtxt'>
-                    <!--说明：1.在两个分界线中间打字 2.<br>是空一行的意思 3.按注释弄，没标注释的不要改-->
-                    <!--分界线，以下可写文章-->
-                    1.也许有羡慕过别人的生活，但我也知道我的幸福，就算上帝给你关上一扇门的同时也忘了开窗，总会在墙上给你留个洞吧。<br>
-2.人各有各的精彩，不必一味憧憬。<br>
-3.其实这世上很多事都是说不出为什么，可他们就那么鲜明的真实的存在的，所以有些事还是让它模糊点儿好。<br>
-4.我们的思想不应该被束缚，天马行空才是我们的本色。<br>
-5.突然发现走的晚是一种悲哀，也是一种无奈。<br>
-6.我都是倔强的孩子，哪怕是流泪，也会昂着头，让泪水折射出七彩的色彩。<br>
-7.现在很喜欢写一些很破碎的文字，不知道为什么，会突然有种特别的感觉，不必要写的很整齐，很漂亮，横着，竖着，就这么随意。<br>
-8.看过一句话，说是寂寞的孩子喜欢和文字打交道，不知道现在的我算不算寂寞呢？<br>
-9.还是很喜欢晴天，不论是JAY的歌还真正的晴天，很喜欢那种阳光照到身上暖暖的感觉，毛茸茸的，又好像一碰就会破碎似的。<br>
-10.一切的一切，只是自己不愿去面对……<br>
-11.雨一直下，屋顶也很不争气的湿了一大片，好象当初的自己，而现在，已经放晴了，至少，是多云吧。<br>
-12.看着从前的路，还是一样，只不过，你不再孤单，而我，像那条路一样，安静而绵长.....<br>
-13.看到某个人和别人在一起，心里真的好难受，但又有什么办法，物是人非，又有什么可以挽留。<br>
-14.每一个人都有一个一直守护着他/她的天使，这个天使如果觉得你的生 活太过悲哀，你的心情太过难过，那么他就会化身成为你身边的某一个人，也许是你的朋友，也许是你的恋人，也许是你的父母，也许是你仅仅见过一面的陌生人，这些人安静地出现在你的生命里，陪你度过一小段快乐的时光，然后他再不动声色的离开。<br>
-15.于是你的人生就有了幸福的回忆，即使以后你的道路上布满了风雪，可是你依然可以想起曾经幸福的事情，你就可以依然勇敢。<br>
-16.于是曾经的那些失落和伤心都将不复存在，时间是最伟大的治愈师。<br>
-17.也许，这就是命，其实它从一出生就安排好了，我们只是木偶，演着我们该演的戏。<br>
-18.有好多人再也见不到，实在好可惜；可也许只有这样，最终的美丽才可以永存!<br>
-19.这些天，自己想了好多，也许爱原本就是一种错，只是不经过这些自己就永远也长不大，也永远无法得到爱。<br>
-20.没理由为了想念而拼命争取，摘些记忆吝啬地藏在心间。<br>
-21.和最爱的人相忘于江湖，和次爱的人相濡以沫。这句话对吗？求开导……<br>
-22.没有小心眼的男生，只是因为太爱你。<br>
-23.如果你做到了最好，即使输了也没有什么好遗憾的，如果没有，那就继续努力做到最好。<br>
-24.回忆是令人幸福，还是令人悲伤的东西？<br>
-25.一窗月光，我却把它挡在帘外……<br>
-26.对不起，我会学着心怀宽广……<br>
-27.有些事情，总是不愿意认输；有些结果，总是不愿意承认。<br>
-28.青春，是一本太仓促的书。<br>
-29.无论做什么，记得为心而做，那就毫无怨言。<br>
-30.思念随那落叶一起飘荡。<br>
-31.梦并不远，只需要踮起脚尖。<br>
-32.记住自己的目标就好，我知道，我在慢慢前进。<br>
-33.只是我觉得，爱不是挂在嘴边的，而是刻在心底的。<br>
-34.到现在，才听懂了太多以前听不懂的歌，读懂了太多以前懂不懂的诗。<br>
-35.阳光照得到的地方，文字可以书写温暖。<br>
-36.我存在在我的存在。<br>
-37.望夫石，离人叹。<br>
-38.总是遇见熟悉的衣服，和一张张陌生的脸。<br>
-39.看不懂你们的生活，读不懂你们的信仰。<br>
-40.亲爱的你怎么不在我身边，我们还有多少时间能浪费？<br>
-41.谁都有谁的无奈，谁都有谁的悲哀。<br>
-42.提个问题也有潜规则，是我们决定了社会，还是社会决定了我们<br>
-43.窗外的阳光还是驱散不了心房的乌云。<br>
-44.随遇而安真的是太高的境界。<br>
-45.那些记忆中的黑白，比现实中的彩色更加绚烂。<br>
-46.命运就是这样，在你快要忘记一个人的时候，那个人又会突然出现在你面前。所以，我们才会记得好多好多人。<br>
-47.被石头绊倒了，拍拍土，擦擦泪，我依旧可以很好地向前走。<br>
+﻿<!DOCTYPE html>
+<html>
 
+<head>
+    <title>金句</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://a107studio.github.io/css/file.css">
+    <link rel="shortcut icon" href="https://a107studio.github.io/img/logo.ico">
+</head>
 
-                    <!--分界线，以上可写文章-->
-                    <div class="page_chapter">
-                        <ul>
-                            <li><a href="###">上一篇</a></li><!--到时候看着填-->
-                            <li><a href="https://a107studio.github.io/homepage.html">返回目录</a></li><!--回主页，勿动-->
-                            <li><a href="###">下一篇</a></li><!--到时候看着填-->
-                            <li><a  href='supportus.html'>support us</a></li>
-                        </ul>
-                </div>
-    </body>
+<body for="html-export">
+    <div class="markdown-preview">
+        <h1 class="header">
+            <center>WB老师金句</center>
+        </h1>
+        <!-- 下面p标签内可以写文章，每一段开头要加上<br>&emsp;&emsp; span标签可以选定颜色，-->
+        <!-- <strong>内部写加粗</strong> <span class="blue">132</span><i>i标签使得文字变成斜体</i><mark>mark标签用于高亮文本</mark> -->
+        <p>
+            1.也许有羡慕过别人的生活，但我也知道我的幸福，就算上帝给你关上一扇门的同时也忘了开窗，总会在墙上给你留个洞吧。<br>
+            2.人各有各的精彩，不必一味憧憬。<br>
+            3.其实这世上很多事都是说不出为什么，可他们就那么鲜明的真实的存在的，所以有些事还是让它模糊点儿好。<br>
+            4.我们的思想不应该被束缚，天马行空才是我们的本色。<br>
+            5.突然发现走的晚是一种悲哀，也是一种无奈。<br>
+            6.我都是倔强的孩子，哪怕是流泪，也会昂着头，让泪水折射出七彩的色彩。<br>
+            7.现在很喜欢写一些很破碎的文字，不知道为什么，会突然有种特别的感觉，不必要写的很整齐，很漂亮，横着，竖着，就这么随意。<br>
+            8.看过一句话，说是寂寞的孩子喜欢和文字打交道，不知道现在的我算不算寂寞呢？<br>
+            9.还是很喜欢晴天，不论是JAY的歌还真正的晴天，很喜欢那种阳光照到身上暖暖的感觉，毛茸茸的，又好像一碰就会破碎似的。<br>
+            10.一切的一切，只是自己不愿去面对……<br>
+            11.雨一直下，屋顶也很不争气的湿了一大片，好象当初的自己，而现在，已经放晴了，至少，是多云吧。<br>
+            12.看着从前的路，还是一样，只不过，你不再孤单，而我，像那条路一样，安静而绵长.....<br>
+            13.看到某个人和别人在一起，心里真的好难受，但又有什么办法，物是人非，又有什么可以挽留。<br>
+            14.每一个人都有一个一直守护着他/她的天使，这个天使如果觉得你的生
+            活太过悲哀，你的心情太过难过，那么他就会化身成为你身边的某一个人，也许是你的朋友，也许是你的恋人，也许是你的父母，也许是你仅仅见过一面的陌生人，这些人安静地出现在你的生命里，陪你度过一小段快乐的时光，然后他再不动声色的离开。<br>
+            15.于是你的人生就有了幸福的回忆，即使以后你的道路上布满了风雪，可是你依然可以想起曾经幸福的事情，你就可以依然勇敢。<br>
+            16.于是曾经的那些失落和伤心都将不复存在，时间是最伟大的治愈师。<br>
+            17.也许，这就是命，其实它从一出生就安排好了，我们只是木偶，演着我们该演的戏。<br>
+            18.有好多人再也见不到，实在好可惜；可也许只有这样，最终的美丽才可以永存!<br>
+            19.这些天，自己想了好多，也许爱原本就是一种错，只是不经过这些自己就永远也长不大，也永远无法得到爱。<br>
+            20.没理由为了想念而拼命争取，摘些记忆吝啬地藏在心间。<br>
+            21.和最爱的人相忘于江湖，和次爱的人相濡以沫。这句话对吗？求开导……<br>
+            22.没有小心眼的男生，只是因为太爱你。<br>
+            23.如果你做到了最好，即使输了也没有什么好遗憾的，如果没有，那就继续努力做到最好。<br>
+            24.回忆是令人幸福，还是令人悲伤的东西？<br>
+            25.一窗月光，我却把它挡在帘外……<br>
+            26.对不起，我会学着心怀宽广……<br>
+            27.有些事情，总是不愿意认输；有些结果，总是不愿意承认。<br>
+            28.青春，是一本太仓促的书。<br>
+            29.无论做什么，记得为心而做，那就毫无怨言。<br>
+            30.思念随那落叶一起飘荡。<br>
+            31.梦并不远，只需要踮起脚尖。<br>
+            32.记住自己的目标就好，我知道，我在慢慢前进。<br>
+            33.只是我觉得，爱不是挂在嘴边的，而是刻在心底的。<br>
+            34.到现在，才听懂了太多以前听不懂的歌，读懂了太多以前懂不懂的诗。<br>
+            35.阳光照得到的地方，文字可以书写温暖。<br>
+            36.我存在在我的存在。<br>
+            37.望夫石，离人叹。<br>
+            38.总是遇见熟悉的衣服，和一张张陌生的脸。<br>
+            39.看不懂你们的生活，读不懂你们的信仰。<br>
+            40.亲爱的你怎么不在我身边，我们还有多少时间能浪费？<br>
+            41.谁都有谁的无奈，谁都有谁的悲哀。<br>
+            42.提个问题也有潜规则，是我们决定了社会，还是社会决定了我们<br>
+            43.窗外的阳光还是驱散不了心房的乌云。<br>
+            44.随遇而安真的是太高的境界。<br>
+            45.那些记忆中的黑白，比现实中的彩色更加绚烂。<br>
+            46.命运就是这样，在你快要忘记一个人的时候，那个人又会突然出现在你面前。所以，我们才会记得好多好多人。<br>
+            47.被石头绊倒了，拍拍土，擦擦泪，我依旧可以很好地向前走。<br>
+        </p>
+    </div>
+</body>
+<footer>
+    <center><a href="https://a107studio.github.io/homepage.html" class="btn btn-primary">回107主页面</a></center>
+</footer>
+
 </html>
