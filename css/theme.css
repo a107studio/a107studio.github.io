@@ -12958,11 +12958,11 @@ a.text-link:hover {
 }
 
 .page-header.theme-bg-dark .page-heading {
-    color: #fff
+    color: white
 }
 
 .page-header.theme-bg-dark .page-intro {
-    color: #fff;
+    color: white;
     -webkit-opacity: .8;
     -moz-opacity: .8;
     opacity: .8
