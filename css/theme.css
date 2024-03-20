@@ -3355,7 +3355,22 @@ fieldset:disabled .btn {
     --bs-btn-disabled-bg: #5cb377;
     --bs-btn-disabled-border-color: #5cb377
 }
-
+.btn-purple{
+    --bs-btn-color: #000;
+    --bs-btn-bg: #a03fc0;
+    --bs-btn-border-color: #a03fc0;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #a25bba;
+    --bs-btn-hover-border-color: #c83fd2;
+    --bs-btn-focus-shadow-rgb: 77, 130, 199;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #a25bba;
+    --bs-btn-active-border-color: #c83fd2;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #a03fc0;
+    --bs-btn-disabled-border-color: #a03fc0;
+}
 .btn-info {
     --bs-btn-color: #000;
     --bs-btn-bg: #5b99ea;
@@ -12996,6 +13011,7 @@ a.text-link:hover {
 }
 
 .btn-success,
+.btn-purple,
 .btn-warning,
 .btn-info,
 .btn-danger {
@@ -13005,6 +13021,9 @@ a.text-link:hover {
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active,
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active,
