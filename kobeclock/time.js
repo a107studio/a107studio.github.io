@@ -27,7 +27,7 @@ window.onload = function() {
 			var str = oYea.substr(2,2) + checkTime(oMon) + checkTime(oDay);
 			var aPar = document.getElementsByTagName("span");
 			for (var i=0; i<imgs.length; i++) {
-				imgs[i].src = "images/" + str[i] + ".JPG";
+				imgs[i].src = "images/" + str[i] + ".jpg";
 			}
 			
 			for (var j=0; j<aPar.length; j++) {
@@ -44,7 +44,7 @@ window.onload = function() {
 			var str = checkTime(oHou) + checkTime(oMin) + checkTime(oSec);
 			var aPar = document.getElementsByTagName("span");
 			for (var i=0; i<imgs.length; i++) {
-				imgs[i].src = "images/" + str[i] + ".JPG";
+				imgs[i].src = "images/" + str[i] + ".jpg";
 			}
 			for (var j=0; j<aPar.length; j++) {
 				aPar[j].innerHTML = ":";
