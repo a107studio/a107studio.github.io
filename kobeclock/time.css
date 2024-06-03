@@ -6,7 +6,7 @@ body {
 	font-size: 80px;
 }
 #main {
-	width: 600px;
+	width: 650px;
 	height: 180px;
 	border: 40px solid #999;
 	border-radius: 60px;
@@ -16,7 +16,7 @@ body {
 	
 }
 .content {
-	width: 580px;
+	width: 630px;
 	height: 160px;
 	margin: 15px 8px;
 	padding: 0 10px;
