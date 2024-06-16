@@ -1,0 +1,895 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../general/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>Annotaion - 107Studio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="107Studio" class="md-header__button md-logo" aria-label="107Studio" data-md-component="logo">
+      
+  <img src="../../assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            107Studio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Annotaion
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/a107studio" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    107Studio
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../wb/" class="md-tabs__link">
+          
+  
+  WangBin
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Articles
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../general/" class="md-tabs__link">
+        
+  
+    
+  
+  GeneralYu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../others/index.md" class="md-tabs__link">
+        
+  
+    
+  
+  Others
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aboutus/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="107Studio" class="md-nav__button md-logo" aria-label="107Studio" data-md-component="logo">
+      
+  <img src="../../assets/favicon.png" alt="logo">
+
+    </a>
+    107Studio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/a107studio" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    107Studio
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../wb/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    WangBin
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Articles
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Articles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Total
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Annotaion
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GeneralYu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Others
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aboutus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Annotaion</h1>
+
+<p>［“3zy”］指田师写法十分相近的两个字母 y，z 与数字 3。学生们时常将他们弄混。研究表明，上数竞课能够有效地提升辨识模糊不清字符的能力。</p>
+<p>［“奥班学生 Og 何有”句］2022 年 4 月，徐副校长在 2023 届 2 班数学课上讲话指出，奥班要有“傲气”。后被谬传为“Og”（见右上图）。Og 是第 118 号元素，是稀有气体元素。2022 年 4 月 30 日，在得知昨晚高二学生抗议事件之后，徐副校长在 2023 届 2 班数学课上讲话指出“你们是闹‘学潮’呢？”这一观点。学潮，指学生、教员因对当时政治或学校事物有所不满而掀起的风潮。</p>
+<p>［“伯努利、雪夫上场”“加权幂均”］指田师所授的伯努利不等式、切比雪夫总和不等式、加权平均不等式与幂平均不等式。田师传授上述四不等式出现了数次卡壳。</p>
+<p>［“窗帘拉上防偷袭”句］数竞同学将高二十五班的窗帘全部拉上以防止突然有人来巡查。后面某一次忘把窗帘恢复成原样而引起田师怀疑。</p>
+<p>［“次日仍背花书包”句］指“猛日葱”事件（2021 年 10 月 19 日）当天田师的穿着。而“休闲看报日逍遥”指那天田师在上课之前正在看报。</p>
+<p>［“从此田师桌旁站”四短句］自此，天使在学生用餐时站在一旁观看，直至学生离开后才用餐。学生正处于生长期，荤食早已吃光，天使只得吃蔬菜喝豆浆。</p>
+<p>［“发怒暴躁现脾气”句］2022年 8 月 30 日，数竞上课地点恢复到原数竞教室。田师强调所有人必须到高二 15 班打扫卫生，但是没有人去。田师因为此事件而生气。</p>
+<p>［“互相尊重师与生”句］指田师说出的至理名言：“学生和老师要相互尊重，哪怕你们都给我评 D，我也不在乎。”</p>
+<p>［“回首济南培训间”四短句］暑假去济南培训路上作者偶然听到某同学与田师孩子的对话：田师孩子说手机还有几格电量，还能再玩一会，此时田师脸色已由红转绿。</p>
+<p>［“家长无奈准备周”句］ 天使离去后，家长害怕天使及其儿子饥饿，便买好饭送上去。后面一句是想象加夸张，天使半天未食一定狼吞虎咽，家长一定害怕不够。</p>
+<p>［“菊花误入嗓子眼”句］田师在一道题证明完毕后喝水，但不小心将水中的菊花喝入嗓子中。</p>
+<p>［“决定一鸣众人惊”及其下四句］该同学使用的引理因为手误而抄错。认真听讲的老犇同学发现了这一错误，决定当面指出。下面四句是对他当面指出场景的描写和被反驳后的窘相进行描摹。</p>
+<p>［“拉开黑板启希沃”句］田师第一次登录微信网页版时，误选中了“记住登录状态”而将教师认证系统的密码保存在了高二 15 班的电脑上。大家利用晚饭后半小时的时间差进行娱乐活动。希沃，高二十五班电脑的品牌名。</p>
+<p>［“期间讲题乱放缩”句］田师在某天晚上讲了一道不等式的习题。他使用放缩手法，将此题变为不可解。</p>
+<p>［“起身指责话未休”句］ 天使叱咤方毕便偏偏离开，借口说带儿子回去上网课，未食一粟。期间，无人劝说田老师留下来吃饭。</p>
+<p>［“全球资本找落脚”句］ 指经典名言：“我每天看报。我自己订的报纸，我天天看。拜登上台后大量发行货币，全球资本都在找寻新的落脚点，想生利。”</p>
+<p>［“如果”］指田师的口头禅：“如果说……”，本口头禅常用于提出假设或者表达观点。</p>
+<p>［“省明师”之催眠］“省明师”指徐东晓老师。他曾获“河南省文明教师”的称号。他的化学课具有催眠功能。</p>
+<p>［“省一强者登台上”句］省一大佬使用卡尔松不等式将该题成功解决。</p>
+<p>［“数竞与我从此分”句］ 指 2021 年 7月，进行数竞考试，题目较为困难。</p>
+<p>［“随后”句］本句话描绘了李炜老师被带走的场景。详见选修 2 第 28 课《最后一课》。 </p>
+<p>［“所谓网课”句］2021 年 8 月与 2022 年 1 月 11 日，田师进行了两次网上授课，然而与其他老师不同，田师网上授课以沉默见长，经常是十几分钟才说一段话。这种做法引得众人反感。</p>
+<p>［“唯喝水”句］见第 62 课《田师新赋》。</p>
+<p>［“先有炜师口嗨拙”句］参见第 1 课。</p>
+<p>［“杏儿虽红独滥觞”句］ 天使在微信中所用昵称为“杏子红了”，但查看其头像时却是黑色人头，与“杏子红了”的意境格格不入，让人不禁怀疑自己是否为色盲。</p>
+<p>［“需用窗作接收器”句］田师在听有关卡尔松不等式的讲解时，坐到了窗台边，手扶着柜顶，目光呆滞。CyberTS 研究组认为，田师因“零件老化”且长时间处于高负荷工作状态，自身电力系统出了一些问题导致自身的无线接收器不足以满足当前的需要，所以需要用窗作为接收器。</p>
+<p>［“学生真有钱”］ 天使看到学生在群里发的去哪里吃饭何时回来时，直呼“现在的学生真有钱啊！”</p>
+<p>［“雪夫打脸田师忿”句］另一位省一大佬用切比雪夫不等式来证明这道题目。田师在临下课前一直找该证法的缺陷，但没有找出，只好先让同学们下课休息。</p>
+<p>［“用餐齐聚宴饮阁”四短句］ 在济南学习时，某天因有人未到，迟迟不开饭。学生一直询问为何不肯开饭，但天使只是回答再等等。一位同学此时埋怨那位同学并催促开饭，天使难忍心中怒火，在餐馆中“叱咤风云”。</p>
+<p>［“欲言家长从何往”句］ 在去济南培训前，家长很关心学生去时路上的问题，纷纷在群中问有关信息。但天使却不慌不忙，在群中发消息：“等我做完手边这几道题，一并为大家解答。”</p>
+<p>［“众多高联模拟题”句］田师从来没有讲过高中数学联赛的真题。同学们只知刷题，却不知题目考察的变化与常用思路。前期田师会讲一些模拟题目，后期连模拟题目也不讲，同学们只好使用“答案法”学习。</p>
+<p>［《论田师梦话》］这篇文章前半段由 S.C.Y 作于 2021 年 9 月数竞考试前夕，当时，田师留了 38 页的数列习题作为作业。后来原稿被废弃。2022 年 9 月，另一作者 L.X.L 将此稿续写并交予 107 出版社编辑。</p>
+<p>［《沁园春•炜》《水调歌头•铁窗泪》］这两首词均写于 2021 年 5 月。李炜老师因酒后疯癫被拘留，有感而发。</p>
+<p>［《咏蔡集序》］是《咏蔡集》（107 出版社，2021）的陈述性文字。该集内有多种多样的文体。这篇序文笔优美，感情真实。</p>
+<p>［《语文是什么》］本文是 2020 年高考语文高分考生所写，C.F.J 老师于 2021 年 4 月 15 日上课时展示本文。</p>
+<p>［DicJunary］“DicJunary”工程是一零七课程教材研究所语言语料研究中心的“一号工程”。“DicJunary”工程记录了蔡师上课时对于时事政治的一些见解、对于语文、园林学、生物性状学、医药学、社会心理学研究的一些心得、对于学生的斥责和对于某些中立事物的评价。目前，“DicJunary”工程正在进行中。“DicJunary”工程为一零七课程教材研究所语言语料研究中心持续时间最长的工程。</p>
+<p>［Q.E.D］是“证明完毕”的缩写。（拉丁文 Quod Erat Demonstrandum，中文翻译：这被证明了）</p>
+<p>［哎呀呀］某一次题目讲完后，田师喝水时发出了“哎呀呀”的声音，引得众人窃笑。此为田师喝水三大连招之一。</p>
+<p>［安阳一中处何位］ 指田师的经典句子：“你知道安阳一中是什么水平吗？”</p>
+<p>［八股］ 指八股文。八股文内容必须用古人的语气，绝对不允许自由发挥，而句子的长短、字的繁简、声调高低等也都要相对成文，字数也有限制。</p>
+<p>［八月之尾］8 月底。</p>
+<p>［白衣卿相］古时指进士，后来引申为尚未发迹的读书人。这里特指宋代词人柳永。柳永《鹤冲天·黄金榜上》：“才子词人，自是白衣卿相。”</p>
+<p>［暴雨倾盆雷声隆］指 2021 年 7 月 31 日开学前一日晚，安阳市的强对流天气现象。</p>
+<p>［备杂之众妙指醒场］指元旦晚会十大热词公布时，光哥按照钊哥的指示前去开门发现在门外的王老师这一件事。“开门事件”后的热词颁奖，由原来的闲聊与批斗的形式变成了宣传正能量的形式。</p>
+<p>［被困囚牢］指安阳一中学生上学的感受。一说又可暗示加拿大籍歌手吴某凡被刑事拘留一事，点明文章写作时间。</p>
+<p>［不蒙拔擢，无耽优渥］本句意思是：我们虽然没有获得很高的提拔，但我们不在意去追寻很高的位置。本句脱胎于李密《陈情表》：“过蒙拔擢，宠命优渥。”</p>
+<p>［不以学子利为重］ 这句话的意思：“不以学子的生命安全、学习质量为重，反而以利益为重”。</p>
+<p>［蔡红楼］ 指喜欢讲解红楼梦的蔡凤君老师。见第 3 课。</p>
+<p>［蔡心］指端正之心、塌实之心、持续之心、感性之心、理解之心、散漫之心、傲慢之心、功利之心、枯燥之心、荒芜之心。</p>
+<p>［操键盘、手不灵巧］指田师使用几何画板绘图时，不提前做好工程文件而是上课缓慢绘图的这一举动。</p>
+<p>［草履］ 指经典名句：“你们都是草履虫”。这里指李炜老师因为弱智学生太多而生发感慨。</p>
+<p>［刬（chǎn）袜步香阶，手提金缕鞋］ 出自李煜诗《菩萨蛮·花明月暗笼轻雾》。刬，只，仅，犹言“光着”。刬袜，只穿着袜子着地。步：这里作动词用，意为走过。香阶：台阶的美称，即飘散香气的台阶。意思为：我光着袜子一步步迈上香阶，手里还轻轻地提着那双金缕鞋。</p>
+<p>［常道秋日耐人熬，我言秋日胜春朝］该句化用刘禹锡的“自古逢秋悲寂寥，我言秋日胜春朝”一句。</p>
+<p>［沉默居士］田振兴老师的号。他以上课不说话而闻名于奥赛班。</p>
+<p>［沉默三十年］沉默，指田师沉默不言的教学方式。三十年，夸张手法，表现时间之长。</p>
+<p>［晨尧赋，博士籍］指《凤君赋》与“DicJunary”工程。{23年作者更正：后面的三个字应指本人这个数据库。}</p>
+<p>［晨尧显龙，博士老师］均为人名。他们均属于一零七工作室的骨干成员。</p>
+<p>［成语名言，未背何提］指蔡老师每一次的课前提问“成语、名言”等内容。她不按照顺序提问，有时使一列人回答不出问题，拖慢课堂进度。</p>
+<p>［叱咤芳华把水喝］田师上课时总是会当着大家的面喝水，并且时不时地下楼接水。接水已经成为田师数竞课的保留项目。</p>
+<p>［丑岁薄待］丑岁，指 2021 辛丑牛年。古人以立春作为一年的开始，故 2021 年 2 月 3 日至 2022 年 2 月 3 日均属辛丑年。薄待，接待人不大方，不慷慨。因时间紧张，一零七节未有完善筹备，故称为“丑岁薄待”。</p>
+<p>［初为刚峰者，名以介溪终］ 刚峰，指海瑞。海瑞，字汝贤，号刚峰。明朝著名清官。推行清丈、平赋税，并屡平冤假错案，打击贪官污吏，深得民心。有“海青天”之誉。死后获赠太子太保，谥号忠介。介溪，指严嵩。严嵩，字惟中，号介溪，专擅明国政近十五年之久。他陷害同僚，必置之死地而后快；同时他结党营私，贪赃纳贿，而他的党羽和子孙更是跋扈骄奢，横行朝廷。严嵩的专权乱政，使明王朝的国力衰弱，边疆防御受到严重破坏，人民惨遭蹂躏。《明史》将严嵩列为明代六大奸臣之一，称其“惟一意媚上，窃权罔利”。这句话的意思是：最初大家像海瑞一般勇于出手，深得民心；不料最后却落得个“奸臣”的名号，遭到唾骂。</p>
+<p>［初中试题高招现］ 本句有两种解读方法：其一是李炜老师在物理竞赛课授课时，对于一道初中试题使用“高等”方法；其二可能指李炜老师认为高考试卷过于简单，试题难度像初中试题一般。</p>
+<p>［调研］指原定于 2022 年 9 月 6 日至 7 日举行的高三第一次调研考试。因疫情原因，考试被迫取消，这也意味着数竞同学仍要参加考试。</p>
+<p>［钉］指“钉钉（DingTalk）”，是一款高效办公软件，此处指网课生活。钉中行乐，指在网课中抽出时间进行娱乐。</p>
+<p>［钉声］指钉钉的声音，此处指老师的催促声。</p>
+<p>［东坡之庐舍］苏东坡一生颠沛流离，每到一地，都乐此不疲地为自己修建住房。</p>
+<p>［㨃］本意是推，引申有拒斥、反驳的意思。</p>
+<p>［二留孤影独徘徊］指田振兴老师。</p>
+<p>［反打对号，不走心也］指2021年1月，蔡老师在同学的默写纸上反打对号。这被认为改作业不认真。据了解，蔡老师有过数次反打对号或侧打对号的经历。</p>
+<p>［愤愤闷闷被训斥，郁郁沉沉不得志］ 本句指 2021 年 4 月，田振兴老师因为考场布置、桌椅摆放、上课时间不明与领导争论而被校领导训斥一事。</p>
+<p>［凤君赋］指酸菜鱼2021年5月的作品。该作品仿照杜牧的《阿房宫赋》而写成。该文章掀起了反蔡运动的第二次高潮。</p>
+<p>［凤语散］凤语，指蔡凤君老师每晚用微信讲解语文试题这一事件。散，消散。</p>
+<p>［奉旨］ 宋仁宗御批进士，看到柳永的名字，问：“此莫非填词之柳三变?”随从答:“是。”御批：且去填词。此处引申为蔡老师化身儒家学者到现代授课。</p>
+<p>［高端人才］ 指李炜在马路上说的经典名句：“我可是高端人才”。此处表现出他的傲慢的态度。</p>
+<p>［高二学生考砸了］指 2021 年数竞考试高二年级的总体成绩不理想，尤其是 2 班：0 人省一、4 人省二、2 人省三。</p>
+<p>［孤独终老］指王老师的情感遭遇：“与此爱相濡以沫，与最爱相忘于江湖”。</p>
+<p>［孤高忠勇］ 指李炜老师不听取别人意见，“孤芳自赏”，亲自“上阵杀敌”的优良品质。</p>
+<p>［古代厕所，塞满香料和美女］这里厕所指的是金谷园内的厕所。</p>
+<p>［古代厕所、香料美女］这里讲述的是有关“金谷园”的事。详见第一册第 2 课。</p>
+<p>［鬼屋］指行政楼。因行政楼教室多，占地面积大，却没有多少人在楼里工作，而被田师亲切地称为“鬼屋”。详见选修 3、选修 6。</p>
+<p>［咳夫核］即 Coughcore 这一种音乐风格。Coughcore 由 Hardcore 演变而来，鼓点一般为 4/4 拍，Bpm（歌曲每分钟节拍数）一般在 170 以上。常见的音乐人有 CougherHunterz，Coughwell 等。</p>
+<p>［咳咳呵哈咳啊呸］ 指 2021 年 5 月田师咳嗽的声音。</p>
+<p>［咳嗽连连，嗓干皮也］指准备公开课（辛弃疾“杀贼”一课）时，蔡老师特别用心，以至于嘴巴都干皮了。</p>
+<p>［喊声阵阵］指公开课大喊“杀贼”一事。</p>
+<p>［赫拉克勒斯］ 赫拉克勒斯（Ηρακλής, Hercules），是古希腊神话中最伟大的英雄，是古希腊神话中的大力神。</p>
+<p>［花草频换］每季度安阳一中总会将行政楼前广场等处的花草更换。有人说：“安阳一中有钱换花草，却没钱给学生提供更优质的环境。”</p>
+<p>［黄艳］黄艳，女，1968 年 11 月出生，安阳市人，中共党员，1991 年毕业于河南师范大学汉语言文学系，曾任安阳市第一中学校长，现任安阳市教育局局长。其倡导“师生友好，科学发展”的办学主张。</p>
+<p>［诲尔谆谆，听我藐藐］讲的人不知疲倦，听的人若无其事。形容徒费唇舌。出自《诗经·大雅·抑》。</p>
+<p>［基本规则］指“你们可以不听，但你们不能打扰我讲课，因为你们打扰我讲课，就是影响其他同学上课，这是不矛盾的啊。所以你们可以不听，但你们不能影响其他同学上课”这一规则。</p>
+<p>［几何画板］ 是一个作图和实现动画的辅助教学软件，是一个适用于数学、平面几何、物理的矢量分析、作图，函数作图的动态几何工具。</p>
+<p>［佳绩］编者注：安阳市第一中学在 2022 年高联中拿下五个省一等奖。其中，高三（2）班获得了 1 个省一，多人获得省二、省三。</p>
+<p>［监督员］田师的新称号。2022 年 8 月，田师从讲台抽屉中翻出一个印有“监督员”的三角台卡，并在每天上课前将其摆正，以彰显自己监督学生的身份。</p>
+<p>［监督员］田师在原数竞教室讲台下发现了一个有“监督员”字样的桌卡。他将该桌卡置于讲台上，且每节课都会检查“监督员”三字朝向是否正确。</p>
+<p>［键仙］ 上课时田老师喜欢使用键盘操纵几何画板进行讲题，因得外号“键仙”。</p>
+<p>［将起事于大楼］2022 年 4 月，因不满学校对高二年级学生采取封校的这一决定，部分高二年级学生在 4 月 29 号晚上 22:00 许于宿舍楼发抗议。有消息称，这次抗议成为五一紧急放假的直接原因。</p>
+<p>［教室打蜡又抛光］指 2022 年 8 月，学校将教学楼地面重新装修一事。</p>
+<p>［接水怒跨警戒线］2022 年 8 月某天晚上，田师孩子在楼下接水时，试图跨过而不是钻过因修缮水房而临时拉起的警戒线，使得大家无法通行。</p>
+<p>［金谷］金谷园，是西晋石崇的别墅，在今河南洛阳。石崇在金谷园中挥霍无度，过着极其糜烂的生活。</p>
+<p>［金考摘抄翻译全］ 这里借用平时最喜欢的三种作业（金考卷、摘抄、文言文翻译）来说明作业多。</p>
+<p>［锦衣夜行］ 夜里穿着华丽的衣服走路。比喻享有荣华富贵而没有在人前显示。此处指大家不声张。《史记·项羽本纪传》：“富贵不归故乡，如衣锦夜行。”</p>
+<p>［近朱者黑而近墨者赤］作者在《咏蔡集序》的反语。</p>
+<p>［经济领域无冕皇］ 指田师于 2021 年 5 月在课上讲解有关经济、复利的内容。</p>
+<p>［竞赛名额在手边］ 指安阳市的物理竞赛名额全部在炜师手中。</p>
+<p>［玦（jué）］古时佩带的玉器，半环形，有缺口。</p>
+<p>［开键］指 K 键。田师经常把 K 读成“开”。下文中“开点”亦指“K 点”</p>
+<p>［可怜酒精迷幻梦］ 详见第 1 课。</p>
+<p>［空留光学万古恨］ 指田振兴老师高中参加物理竞赛时，因对光学内容掌握不全而十分懊悔之事。</p>
+<p>［口述蒙日手写葱］指著名的猛日葱事件。详见《迎田归》（第 32 课，选修 3）、《猛·日·葱——蔡师赠田师言》（第 53 课，选修 6）。</p>
+<p>［哭穷］安阳一中党委书记、校长崔艳军在每学期开学典礼上总说学校很穷：没有政策支持，没有资金的补助，等等。这已经成为安阳一中开学典礼的保留节目。详见第 3 册第 14 课。</p>
+<p>［老犇头］指田师的忠实学徒刘涵宇同志。自从上回在田师数竞课上提出“你这定理有问题”后，他一直在寻找一个证明自己水准的机会。在 2022 年高联中，他荣获省赛区二等奖。</p>
+<p>［老李头］指李炜。</p>
+<p>［乐扬扬以出殡］指学校国旗班练习早校会演奏曲目时吹得太难听一事。</p>
+<p>［李炜一讽，可怜零七］指李炜老师物竞课上声称蔡老师在教师考试中考了107分的“好成绩”。（“谁？CFJ？107！”）</p>
+<p>［怜悯］ 源于名言“我都对你们感到怜悯。”</p>
+<p>［两赋］指《振兴李炜赋》（第 2 册，第 9 课）和《迎田归》（选修 3，第 32 课）。</p>
+<p>［灵气］神话传说中的超自然的神奇的力量。此处指蔡师臆想的物质，它能够衡量万物。</p>
+<p>［庐冢］古时为了表示孝顺父母或尊敬师长，在他们死后的服丧期，为守护坟墓而盖的屋舍，叫做庐冢。庐，屋舍，冢，坟墓。亦作庐墓。</p>
+<p>［茅台］ 在 2021 年 5 月，著名的数学家、经济学家田师就曾经发出过“茅台拉动 A 股 80%”的声音。</p>
+<p>［茅台股价今又涨］据公开资料显示，茅台股价从 2014 年的低点 118.01 元/股飙升至目前的 700 多元/股。</p>
+<p>［茅台镇］田师所管辖的镇。我们的故事就发生在这里。镇上除了有“数学女孩”街道之外，还有“梅涅劳斯村”等乡村。</p>
+<p>［蒙日村］作者虚构的村名。下文的“塞瓦庄”“西姆松村”等也是虚构的。</p>
+<p>［蒙日定理］三个两两不同心的圆，形成三条根轴，则必有下列三种情况之一：（1）三根轴两两平行；（2）三根轴完全重合；（3）三根轴两两相交，此时三根轴必汇于一点，该点称为三圆的根心。该定理由加斯帕·蒙日（Gaspard Monge）提出。也称根心定理。</p>
+<p>［猛日理］为蒙日定理的谬称。“猛日定理”是田师上课提到的一种定理，后人称之为“猛日葱”定理。</p>
+<p>［密汝毛发］田师的头发稀疏且十分有特色。详见选修 3。</p>
+<p>［魔音灌脑，思想强奸］指蔡老师狂轰滥炸地输出自己的理念这一行为。</p>
+<p>［南方周末］报纸。《南方周末》创办于 1984 年，由南方报业传媒集团主管主办，以“在这里，读懂中国”为追求，以“正义、良知、爱心、理性”为基本理念，是一份在中国有着广泛影响、深具公信力的严肃新闻大报。同时也是田师最喜欢看的报纸。</p>
+<p>［殴打动粗］ 指李炜醒酒中疑似袭警一事。</p>
+<p>［烹狗］化用成语“兔死狗烹”。比喻事情成功后，把出过大力的人一脚踢开或杀掉。</p>
+<p>［频频爆梗］上课过程中频频说出一些富有“哲理”的句子。</p>
+<p>［评讲作文，口臭浓浓］指蔡老师讲作文时口臭的味道。双重叠加，令人作呕。</p>
+<p>［乞尾］ 为“摇尾乞怜”的简化。摇尾乞怜，谓狗摇着尾巴讨主人的欢喜。多用以比喻卑躬屈膝，不顾人格地向别人谄媚讨好。韩愈 《应科目与时人书》：“若俛首帖耳，摇尾而乞怜者，非我之志也。”</p>
+<p>［千里森林，万里树梢］ 指李炜老师怒斥安阳市政府只会种树，不加工资之事。</p>
+<p>［钳制思想］ 指评讲作文时如果遇到不一样的观点， 便会先毫不犹豫地否定，再传输自己的价值观的行为。</p>
+<p>［蛩吟］（qióng yín）蟋蟀鸣叫。这里指秋天，即高一上学期。出自宋·柳永《倾杯乐》词：“离绪万端，闻岸草，切切蛩吟如织。”。</p>
+<p>［秋风寒雨］作者作诗时正值连绵不断的阴雨天。</p>
+<p>［秋后郑州行,身影无发觉］指在郑州参加数学竞赛时，没有发现田师带队一事。</p>
+<p>［蚯蚓］ 著名的生物学家李炜老师之意同“草履虫”。</p>
+<p>［全省前列校长欢］指 2022-2023 年秋季开学典礼上，崔彦军校长提到学校去年竞赛教学成绩斐然一事。</p>
+<p>［却把公式谬论叙］指 2021 年 3 月第 1 次上课时，田师证明一道命题，用了一节课的时间还没有证出来真伪的故事。</p>
+<p>［人才］ 这里既指对国家有贡献的数学物理竞赛人才，也指李炜老师这种“高端人才”振兴语录 “振兴语录”是一零七课程教材研究所语言语料研究中心的“三号工程”（“二号工程”为“玉伟语录”）。“振兴语录”工程记录了田师上课时对于时事政治的一些见解、对于数学研究的一些心得、对于学生的斥责和对于某些中立事物的评价。目前，“振兴语录”工程正在进行中。</p>
+<p>［人心不古］感慨人心不如古人那样高尚。这里作者将蔡师和田师的经典言论合二为一。</p>
+<p>［荣誉自由分两半］ 指炜师若在社会上虽有自由，但因犯过的事情导致荣誉丧失；若在狱中虽没有自由，但可以因为自己的光辉事迹而倍感自豪。</p>
+<p>［赛博田师］赛博是 Cyber 音译，源于希腊文 Κυβερνήτης（kyvernítis），原意为舵手。后来作为前缀，代表与 Internet 相关或电脑相关的事物，即采用电子工具或计算机进行的控制。田老师因只会念答案，好似被程序驱动一样，故被 CyberTS 研究组描述为“赛博田师”。</p>
+<p>［三八大推］指三八式投篮。三八式，又叫三八推，双手握住球，食指与拇指成两个立着的八字，五指张开，投篮时将球推出去。这种姿势女生用的较多，且不会篮球的都是这种姿势。</p>
+<p>［嗓干批］2021 年 5 月，因公开课备课过于辛劳，蔡师临下课时说自己“嗓子都干批了”，意在解释自己声音较小的原因。</p>
+<p>［杀贼］指 2021 年 5 月蔡师讲辛弃疾的悲壮故事时说他“曾在临死之前大喊‘杀贼’”。因蔡师太过于投入，引得下面听课的学生频频笑场。</p>
+<p>［上课内容无用］蔡老师上课的内容有些是讲作者的生平和作者的优秀品质，并声称这些东西“无用之用，方为大用”。</p>
+<p>［少委］指徐副校长。她讲课时将“稍微”读成“少委”而得名。</p>
+<p>［省厅精神］指河南教育系统于 7 月 31 日启动了疫情应急机制，这里“精神”指会议上的内容。 </p>
+<p>［盛唐］指蔡凤君老师说过“唐代的蹴鞠”这一事件，此指对古代的羡慕。</p>
+<p>［诗歌文赋，未学何写］这是说蔡老师文言文还没有开始学习就必须要把挖空练习写完一事。</p>
+<p>［十年隐忍陈先锋］ 指工作十年突然跳槽的陈玉伟老师。十年，出自“十年了，我想换一种活法！”。先锋，指先锋教育。</p>
+<p>［十月初六］指数竞考试的时间。2021 年 10 月 6 日，全国高中数学联合竞赛河南赛区在河南省实验中学举行。</p>
+<p>［时事政治、医学常识，归为无用］指仰帝的CPR急救讲解被蔡老师归为“无用”；片总的“美国经济”视频被蔡老师强行终止这两件事。</p>
+<p>［庶］ 古代平民称为“庶”，这里指竞赛是次要的内容。</p>
+<p>［数（shuò）士有峰极高明，若文含激昂文风］ 大意是：许多人在某些领域有巅峰造极、高妙明晰的成就；你们（这些人）写的文字有激昂的风格。</p>
+<p>［数论代数蒙混过］田师讲课时，数论于代数部分的讲解内容少且不充分，大多数题目使用“答案法”进行讲解。</p>
+<p>［思枯竭］作者自己创的词牌名。双调六十六字。</p>
+<p>［塌实］即为“踏实之心”，是十心之一。2021 年 4 月，蔡师课前放出“用心学语文”的PPT，其中“踏实之心”误被写作“塌实之心”，引得众人嘲笑。</p>
+<p>［陶令之雏菊］陶渊明归隐山林后十分喜爱菊花，著有“采菊东篱下，悠然见南山”等诗句。2022年3月，蔡师在课上表达了相应的愿望。</p>
+<p>［涕痰盈樽］鼻涕和痰装满了酒杯。这里指田师经常性地咳嗽。</p>
+<p>［田蔡］指田师和蔡师。他们二人都以上课喝水而闻达于二班。</p>
+<p>［田师归赋闲］这句话的意思为：“田师难道是刚从赋闲的愉快生活中回来吗？”赋闲，没有职业在家闲住。</p>
+<p>［田小虫］指田师的儿子田雨默。</p>
+<p>［通电导线在磁场中的受力］2021 年 6 月，王斌老师在上该课时失手将学校的 U 型磁铁打翻。此事件也为他赢得了参加振动大赛的资格。</p>
+<p>［万物悟于观］本句话的意思是：所有事情的解决方法都是通过观察得到的。</p>
+<p>［炜师针砭猝然离］指 2021 年 6 月李炜老师突然离开安阳一中，不再担任安阳一中教师的事情。</p>
+<p>［未闻其声，仅见证书］指田振兴老师在上暑期竞赛课时，不说话并且书下垫一个证书的操作。</p>
+<p>［五三］指《五年高考三年模拟》。 </p>
+<p>［捂胸皱眉，学东施也］ 指蔡老师听到与自己观念相悖时的动作。研究表明，蔡老师的脸色还会出现红、绿、黑三种颜色。</p>
+<p>［勿弃菜市口］指不要让自己在菜市口被打死。弃，弃市。</p>
+<p>［物竞］指物理竞赛。</p>
+<p>［物理冠］指李炜老师所教学生有十余名获得全国物理竞赛一等奖，多人被保送清华、北大等名校。</p>
+<p>［悟已往之不谏，知来者之可追］这句话意思是：认识到过去的错误已经不可挽回，知道未来的事还来得及补救。</p>
+<p>［檄文］指古代用于晓谕、征召、声讨等的文书，特指声讨敌人或叛逆的文书。也指战斗性强的批判、声讨文章。</p>
+<p>［限制自由］ 指李炜被拘留一事。</p>
+<p>［相信头脑］指田师夏天最喜欢穿的衣服“Trustful Mind”。这被认为是田师的夏季工作服。</p>
+<p>［笑谈大先生］指高一上半学期凤君讲鲁迅时的经典雷人标语。</p>
+<p>［信蔡老师得成功］蔡老师的洗脑功夫一流，有同学深受蔡老师的影响，在自己的语文本上曾写下了“相信蔡老师，语文 130”的话语。</p>
+<p>［杏子红］“杏子红了”为田师的微信名。同一天晚上，田师使用 IE（Internet Explorer）浏览器登录微信网页版并露出其微信头像。田师的微信头像详见第 36课。</p>
+<p>［吁声阵阵］指高一下半学期时蔡师的常用手法。每当学生回答问题时，她总会仔细倾听并积极提出质疑；而当该同学的发言引起自己强烈不满时，她就会发出“吁——”的声音，并摆手示意让该同学坐下。</p>
+<p>［学涛］教育培训机构的名称。2021 年，李炜老师从安阳一中离职后就去学涛进行教育教学工作。</p>
+<p>［学蛙叫］指赵老师教授其女儿“瓜、花”二拼音（guā, huā）。</p>
+<p>［阳明之翠竹］王阳明对着竹子苦思冥想七日七夜，也是什么都没格出来，也是大病一场。这个故事被称为“亭前格竹”。王阳明因此感慨，这圣人不是谁都能做，于是暂时放下了做圣贤的念头，去研究科举学问了。</p>
+<p>［仰观大世，伤扰蝉翼］本句的意思是：抬头看这宏大的世界，又观察着某些微小的事物。蝉翼，蝉的翅膀。常用以比喻极轻极薄的事物。</p>
+<p>［烨（yè）然］ 指光彩鲜明的样子。</p>
+<p>［一二胜状］一班、二班上语文课大家争相发言的壮丽景色。胜状：胜景;佳境。宋·范仲淹《岳阳楼记》：“予观夫巴陵胜状，在洞庭一湖。”</p>
+<p>［一去三两旬］指田师 2021 年 9 月至 10 月停止上课两三周一事。</p>
+<p>［一已成仙化风去］指李炜老师。</p>
+<p>［一中操场把步跑］田师经常在周一下午大课间到操场进行体育活动。有时，他不仅跑步，还有“正挂金钩”（如图）。</p>
+<p>［疑蔡师之驳言］2022 年 8 月中旬，蔡师从正一中学开会回来后看见自习的同学们后，进行了长达 10 分钟的批评教育。同学们对她突然犯病感到不理解。</p>
+<p>［以诸生为仆役］指安阳一中独树一帜的劳动教育（劳教）。曾有“把女学生当男学生用，把男学生当牲口使”的说法。</p>
+<p>［椅凳乱摆一中祸］指田师对数学竞赛教室桌椅乱摆这一行为的微词。</p>
+<p>［疫魔肆虐中华痛］指 2021 年 7 月由德尔塔毒株引发的多地区疫情。可参见下一课。 </p>
+<p>［有］这是《曾经我们也想恋人一样》中的内容。本字应为“头”，为作者笔误。</p>
+<p>［与鬼度良缘］语自田师的鬼屋理论：“这么大的行政楼，连一间用于专门数学竞赛的教室都没有，你们这教室这是给鬼住呢？”</p>
+<p>［玉凤元年］这里是指 2020 年。</p>
+<p>［欲把李炜来叫嚣］ 指每年的学生指出李炜的错误这一正义举动。</p>
+<p>［圆幂定理］圆幂定理相交弦定理、切线长定理、弦切角定理及割线定理(切割线定理推论)的统一。数竞考试前夕，田师没有讲圆幂定理，结果当年的 A 卷考了蒙日定理，A1 卷考了 A 卷的逆命题。身为数竞教师，在得知 A 卷考察了蒙日定理后，仍不准备讲解相关内容，遭到大家唾骂理所应当。</p>
+<p>［缘木求鱼］爬上树去找鱼。比喻行事的方向、方法不对，必将劳而无功。</p>
+<p>［怎堪乘方无概念］ 指田老师看见 1.01365=37.8 这一“忽悠人”的经典后，发出要对乘方有敬畏之心、对乘方有基本的概念的声音。</p>
+<p>［战备状态］8 月 1 日安阳市全市进入战备状态。 </p>
+<p>［振动大赛］指作者构想出来的一种比赛表现形式。</p>
+<p>［振兴中华为己任］ 指田师为了实现中华民族伟大复兴而教授数竞。振兴又符合田振兴的名字。</p>
+<p>［征文］2021 年 11 月 16 日数竞课上，田师一改往日直接开始讲课的流程，先抛出了一个问题：大家有没有征文？紧接着引出了《南方周末》的征文活动一事，后又点出了一篇“京味之作”——《大戏台子四方方》。这里通过写“征文”一词，表述了田师对文学的喜爱、对自己高中同学的艳羡之情和对同学们不能投稿征文，自己无法担任征文指导教师的无奈。</p>
+<p>［中学老师四散逃］ 指田振兴老师在初中时，几乎所有老师因为琐事而停止教学。</p>
+<p>［状元提笔诚后生］指 2021 年 4 月 15 日蔡师课上展示的 2020 年高分考生所写的文章《语文是什么》。</p>
+<p>［子云之亭栈］子云亭是西汉文学家、哲学家、语言家扬雄的建筑。</p>
+<p>［梓童］“梓童”是皇帝对皇后的称呼。</p>
+<p>［醉意醺醺，路中嘶嚎］ 指 2021 年5 月李炜老师酒后驾驶电动车一事，在学校掀起热议。</p>
+<p>［左茅台、右键盘］这句话点名了田师较为看重的两件物品——茅台酒和无线键盘。此外，为了使大家明白田师对这两件物品的热爱，作者在 2021 年 12 月英语课上使用英文进行造句，描绘了一个左手拿着茅台，右臂夹着键盘的中年数竞男教师的形象，不仅使大家感到了轻松愉悦，也对田师的辛劳这一正面形象进行了宣传。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.path", "navigation.top", "navigation.sections", "navigation.prune", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
